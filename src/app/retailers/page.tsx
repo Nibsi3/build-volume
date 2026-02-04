@@ -95,13 +95,13 @@ export default function RetailersPage() {
             <div className="flex gap-2">
               <button
                 onClick={() => setViewMode("map")}
-                className={`p-2 border transition-colors ${viewMode === "map" ? "bg-[#ff6b35] border-[#ff6b35] text-white" : "border-white/10 text-[#666] hover:text-white"}`}
+                className={`p-2 border transition-colors ${viewMode === "map" ? "bg-[#ffffff] border-[#ffffff] text-white" : "border-white/10 text-[#666] hover:text-white"}`}
               >
                 <Map className="w-4 h-4" />
               </button>
               <button
                 onClick={() => setViewMode("list")}
-                className={`p-2 border transition-colors ${viewMode === "list" ? "bg-[#ff6b35] border-[#ff6b35] text-white" : "border-white/10 text-[#666] hover:text-white"}`}
+                className={`p-2 border transition-colors ${viewMode === "list" ? "bg-[#ffffff] border-[#ffffff] text-white" : "border-white/10 text-[#666] hover:text-white"}`}
               >
                 <List className="w-4 h-4" />
               </button>
@@ -123,10 +123,10 @@ export default function RetailersPage() {
                     <div
                       key={retailer.id}
                       onClick={() => setSelectedRetailer(retailer)}
-                      className={`bg-[#1a1a1a] p-4 border cursor-pointer transition-all ${selectedRetailer?.id === retailer.id ? "border-[#ff6b35]" : "border-white/5 hover:border-white/10"}`}
+                      className={`bg-[#1a1a1a] p-4 border cursor-pointer transition-all card-noise ${selectedRetailer?.id === retailer.id ? "border-[#ffffff]" : "border-white/5 hover:border-white/10"}`}
                     >
                       <div className="flex items-start justify-between mb-2">
-                        <h3 className={`text-sm font-medium transition-colors ${selectedRetailer?.id === retailer.id ? "text-[#ff6b35]" : "text-white"}`}>
+                        <h3 className={`text-sm font-medium transition-colors ${selectedRetailer?.id === retailer.id ? "text-[#ffffff]" : "text-white"}`}>
                           {retailer.name}
                         </h3>
                         <span className="text-[9px] text-[#888] bg-white/5 px-2 py-0.5 uppercase tracking-wider">
@@ -135,7 +135,7 @@ export default function RetailersPage() {
                       </div>
                       <p className="text-[#666] text-xs mb-2">{retailer.address}</p>
                       <div className="flex items-center gap-2">
-                        <Phone className="w-3 h-3 text-[#ff6b35]" />
+                        <Phone className="w-3 h-3 text-[#ffffff]" />
                         <a href={`tel:${retailer.phone}`} className="text-[#888] text-xs hover:text-white">
                           {retailer.phone}
                         </a>
@@ -165,7 +165,7 @@ export default function RetailersPage() {
 
           {/* Selected Retailer Details */}
           {selectedRetailer && (
-            <div className="mt-6 p-6 bg-[#1a1a1a] border border-[#ff6b35]">
+            <div className="mt-6 p-6 bg-[#1a1a1a] border border-[#ffffff] card-noise">
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-xl text-white font-medium">{selectedRetailer.name}</h3>
@@ -180,18 +180,18 @@ export default function RetailersPage() {
               </div>
               <div className="grid md:grid-cols-3 gap-4">
                 <a href={`tel:${selectedRetailer.phone}`} className="flex items-center gap-3 text-[#888] hover:text-white transition-colors">
-                  <Phone className="w-4 h-4 text-[#ff6b35]" />
+                  <Phone className="w-4 h-4 text-[#ffffff]" />
                   {selectedRetailer.phone}
                 </a>
                 {selectedRetailer.email && (
                   <a href={`mailto:${selectedRetailer.email}`} className="flex items-center gap-3 text-[#888] hover:text-white transition-colors">
-                    <Mail className="w-4 h-4 text-[#ff6b35]" />
+                    <Mail className="w-4 h-4 text-[#ffffff]" />
                     {selectedRetailer.email}
                   </a>
                 )}
                 {selectedRetailer.website && (
                   <a href={selectedRetailer.website} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[#888] hover:text-white transition-colors">
-                    <Globe className="w-4 h-4 text-[#ff6b35]" />
+                    <Globe className="w-4 h-4 text-[#ffffff]" />
                     Visit Website
                   </a>
                 )}
@@ -200,7 +200,7 @@ export default function RetailersPage() {
                 href={`https://www.google.com/maps/dir/?api=1&destination=${selectedRetailer.lat},${selectedRetailer.lng}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-[#ff6b35] text-white text-sm hover:bg-[#ff8c5a] transition-colors"
+                className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-white text-black text-sm hover:bg-[#cccccc] transition-colors"
               >
                 <MapPin className="w-4 h-4" />
                 Get Directions
@@ -223,7 +223,7 @@ export default function RetailersPage() {
             </p>
             <a
               href="mailto:info@nordflamsa.co.za"
-              className="inline-flex items-center gap-3 text-white text-sm tracking-widest uppercase hover:text-[#ff6b35] transition-colors group"
+              className="inline-flex items-center gap-3 text-white text-sm tracking-widest uppercase hover:text-[#ffffff] transition-colors group"
             >
               <Mail className="w-4 h-4" />
               Contact Us

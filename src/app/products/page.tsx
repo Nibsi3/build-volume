@@ -114,7 +114,7 @@ export default function ProductsPage() {
                 {activeFilter === filter.id && (
                   <motion.div
                     layoutId="activeFilter"
-                    className="absolute -bottom-4 left-0 right-0 h-0.5 bg-[#ff6b35]"
+                    className="absolute -bottom-4 left-0 right-0 h-0.5 bg-[#ffffff]"
                     transition={{ type: "spring", stiffness: 500, damping: 30 }}
                   />
                 )}
@@ -145,18 +145,20 @@ export default function ProductsPage() {
                 layout
               >
                 <Link href={`/products/${product.id}`} className="block group">
-                  <div className="bg-[#1a1a1a] hover:bg-[#2a2a2a] transition-all duration-300 relative">
+                  <div className="bg-[#1a1a1a] hover:bg-[#2a2a2a] transition-all duration-300 relative card-noise">
                     {/* Sale Badge */}
                     {product.originalPrice && (
                       <div className="absolute top-3 left-3 z-10">
-                        <span className="bg-[#ff6b35] text-white text-[10px] font-medium px-2 py-1 uppercase tracking-wider">
+                        <span className="bg-white text-black text-[10px] font-medium px-2 py-1 uppercase tracking-wider">
                           Sale
                         </span>
                       </div>
                     )}
                     
                     {/* Product Image */}
-                    <div className="aspect-square relative overflow-hidden bg-gradient-to-b from-[#1a1a1a] to-[#0c0c0c]">
+                    <div className="aspect-square relative overflow-hidden bg-gradient-to-b from-[#1a1a1a] via-[#151515] to-[#0c0c0c]">
+                      {/* Subtle radial glow */}
+                      <div className="absolute inset-0 bg-radial-gradient opacity-30" style={{ background: 'radial-gradient(circle at center, rgba(255,255,255,0.03) 0%, transparent 70%)' }} />
                       <Image
                         src={product.image}
                         alt={product.name}
@@ -169,7 +171,7 @@ export default function ProductsPage() {
                     
                     {/* Product Info */}
                     <div className="p-4 md:p-5">
-                      <h3 className="text-white text-sm md:text-base font-medium group-hover:text-[#ff6b35] transition-colors mb-1">
+                      <h3 className="text-white text-sm md:text-base font-medium group-hover:text-[#ffffff] transition-colors mb-1">
                         {product.name}
                       </h3>
                       <p className="text-[#666] text-xs mb-3">
@@ -229,7 +231,7 @@ export default function ProductsPage() {
           </p>
           <Link
             href="/retailers"
-            className="inline-flex items-center gap-3 text-white text-sm tracking-[0.1em] uppercase hover:text-[#ff6b35] transition-colors group"
+            className="inline-flex items-center gap-3 text-white text-sm tracking-[0.1em] uppercase hover:text-[#ffffff] transition-colors group"
           >
             Find a Dealer
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

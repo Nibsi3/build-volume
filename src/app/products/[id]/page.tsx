@@ -55,7 +55,7 @@ export default function ProductDetailPage() {
               src={product.heroImage}
               alt={`${product.name} lifestyle`}
               fill
-              className="object-cover"
+              className="object-cover grayscale"
               priority
               quality={90}
             />
@@ -82,7 +82,7 @@ export default function ProductDetailPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-[#ff6b35] text-xs tracking-widest uppercase mb-4 block">
+            <span className="text-[#ffffff] text-xs tracking-widest uppercase mb-4 block">
               NORDflam Premium Fireplace
             </span>
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-light text-white mb-4 drop-shadow-2xl">
@@ -105,7 +105,9 @@ export default function ProductDetailPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="aspect-square bg-gradient-to-b from-[#1a1a1a] to-[#0c0c0c] overflow-hidden rounded-xl border border-white/5 sticky top-8">
+              <div className="aspect-square bg-gradient-to-b from-[#1a1a1a] via-[#151515] to-[#0c0c0c] overflow-hidden rounded-xl border border-white/5 sticky top-8 card-noise">
+                {/* Premium radial glow */}
+                <div className="absolute inset-0" style={{ background: 'radial-gradient(circle at center, rgba(255,255,255,0.04) 0%, transparent 60%)' }} />
                 <Image
                   src={product.image}
                   alt={product.name}
@@ -117,7 +119,7 @@ export default function ProductDetailPage() {
                 />
                 {product.originalPrice && (
                   <div className="absolute top-6 left-6 z-10">
-                    <span className="bg-[#ff6b35] text-white text-xs font-medium px-3 py-1.5 uppercase tracking-wider">
+                    <span className="bg-white text-black text-xs font-medium px-3 py-1.5 uppercase tracking-wider">
                       Sale
                     </span>
                   </div>
@@ -125,7 +127,7 @@ export default function ProductDetailPage() {
                 {/* ECODESIGN Badge */}
                 <div className="absolute bottom-6 right-6 z-10">
                   <div className="bg-white/10 backdrop-blur-sm px-3 py-2 text-center rounded">
-                    <div className="text-[#ff6b35] text-[10px] font-bold tracking-wider">ECODESIGN</div>
+                    <div className="text-[#ffffff] text-[10px] font-bold tracking-wider">ECODESIGN</div>
                     <div className="text-white text-xs font-light">2022</div>
                   </div>
                 </div>
@@ -138,7 +140,7 @@ export default function ProductDetailPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <span className="text-[#ff6b35] text-xs tracking-[0.2em] uppercase mb-4 block">
+              <span className="text-[#ffffff] text-xs tracking-[0.2em] uppercase mb-4 block">
                 NORDflam Premium Fireplace
               </span>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-4">
@@ -169,7 +171,7 @@ export default function ProductDetailPage() {
               <div className="grid grid-cols-4 gap-4 mb-8 pb-8 border-b border-white/10">
                 <div className="text-center">
                   <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-[#1a1a1a] flex items-center justify-center">
-                    <Flame className="w-5 h-5 text-[#ff6b35]" />
+                    <Flame className="w-5 h-5 text-[#ffffff]" />
                   </div>
                   <div className="text-white text-sm font-medium">
                     {product.powerMax ? `${product.power}-${product.powerMax}` : product.power}
@@ -178,21 +180,21 @@ export default function ProductDetailPage() {
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-[#1a1a1a] flex items-center justify-center">
-                    <Shield className="w-5 h-5 text-[#ff6b35]" />
+                    <Shield className="w-5 h-5 text-[#ffffff]" />
                   </div>
                   <div className="text-white text-sm font-medium">{product.warranty}</div>
                   <div className="text-[#666] text-[10px] uppercase tracking-wider">Warranty</div>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-[#1a1a1a] flex items-center justify-center">
-                    <Thermometer className="w-5 h-5 text-[#ff6b35]" />
+                    <Thermometer className="w-5 h-5 text-[#ffffff]" />
                   </div>
                   <div className="text-white text-sm font-medium">{product.fuelType}</div>
                   <div className="text-[#666] text-[10px] uppercase tracking-wider">Fuel</div>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-[#1a1a1a] flex items-center justify-center">
-                    <Zap className="w-5 h-5 text-[#ff6b35]" />
+                    <Zap className="w-5 h-5 text-[#ffffff]" />
                   </div>
                   <div className="text-white text-sm font-medium">A+</div>
                   <div className="text-[#666] text-[10px] uppercase tracking-wider">Energy</div>
@@ -208,7 +210,7 @@ export default function ProductDetailPage() {
                       key={index}
                       className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#1a1a1a] text-[#888] text-xs"
                     >
-                      <Check className="w-3 h-3 text-[#ff6b35]" />
+                      <Check className="w-3 h-3 text-[#ffffff]" />
                       {feature}
                     </span>
                   ))}
@@ -219,7 +221,7 @@ export default function ProductDetailPage() {
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Link
                   href="/retailers"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#ff6b35] text-white text-sm font-medium tracking-wider uppercase hover:bg-[#ff8c5a] transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black text-sm font-medium tracking-wider uppercase hover:bg-[#cccccc] transition-all"
                 >
                   Find a Dealer
                 </Link>
@@ -258,7 +260,7 @@ export default function ProductDetailPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Dimensions Visual */}
               <div className="relative">
-                <div className="aspect-video bg-[#1a1a1a] rounded-lg border border-white/5 overflow-hidden relative">
+                <div className="aspect-video bg-[#1a1a1a] rounded-lg border border-white/5 overflow-hidden relative card-noise">
                   {product.dimensionsImage ? (
                     <Image
                       src={product.dimensionsImage}
@@ -278,26 +280,26 @@ export default function ProductDetailPage() {
               {/* Dimensions Data */}
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-full bg-[#ff6b35]/10 flex items-center justify-center">
-                    <Maximize2 className="w-5 h-5 text-[#ff6b35]" />
+                  <div className="w-10 h-10 rounded-full bg-[#ffffff]/10 flex items-center justify-center">
+                    <Maximize2 className="w-5 h-5 text-[#ffffff]" />
                   </div>
                   <h2 className="text-2xl font-light text-white">DIMENSIONS</h2>
                 </div>
                 <div className="grid grid-cols-3 gap-4">
-                  <div className="bg-[#1a1a1a] p-6 rounded-lg border border-white/5 text-center">
+                  <div className="bg-[#1a1a1a] p-6 rounded-lg border border-white/5 text-center card-noise">
                     <div className="text-[#666] text-xs uppercase tracking-wider mb-2">Width</div>
                     <div className="text-white text-3xl font-light">{product.dimensions.width}</div>
-                    <div className="text-[#ff6b35] text-sm">mm</div>
+                    <div className="text-[#ffffff] text-sm">mm</div>
                   </div>
-                  <div className="bg-[#1a1a1a] p-6 rounded-lg border border-white/5 text-center">
+                  <div className="bg-[#1a1a1a] p-6 rounded-lg border border-white/5 text-center card-noise">
                     <div className="text-[#666] text-xs uppercase tracking-wider mb-2">Height</div>
                     <div className="text-white text-3xl font-light">{product.dimensions.height}</div>
-                    <div className="text-[#ff6b35] text-sm">mm</div>
+                    <div className="text-[#ffffff] text-sm">mm</div>
                   </div>
-                  <div className="bg-[#1a1a1a] p-6 rounded-lg border border-white/5 text-center">
+                  <div className="bg-[#1a1a1a] p-6 rounded-lg border border-white/5 text-center card-noise">
                     <div className="text-[#666] text-xs uppercase tracking-wider mb-2">Depth</div>
                     <div className="text-white text-3xl font-light">{product.dimensions.depth}</div>
-                    <div className="text-[#ff6b35] text-sm">mm</div>
+                    <div className="text-[#ffffff] text-sm">mm</div>
                   </div>
                 </div>
                 <p className="text-[#666] text-sm mt-4">
@@ -317,36 +319,36 @@ export default function ProductDetailPage() {
               {/* Energy Rating Info */}
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-full bg-[#ff6b35]/10 flex items-center justify-center">
-                    <Zap className="w-5 h-5 text-[#ff6b35]" />
+                  <div className="w-10 h-10 rounded-full bg-[#ffffff]/10 flex items-center justify-center">
+                    <Zap className="w-5 h-5 text-[#ffffff]" />
                   </div>
                   <h2 className="text-2xl font-light text-white">ENERGY EFFICIENCY</h2>
                 </div>
                 <p className="text-[#888] text-lg leading-relaxed mb-6">
-                  This fireplace is rated <span className="text-[#ff6b35] font-medium">A+</span> for energy efficiency, 
+                  This fireplace is rated <span className="text-[#ffffff] font-medium">A+</span> for energy efficiency,
                   meeting the highest European standards for sustainable heating.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-[#0c0c0c] p-5 rounded-lg border border-white/5">
+                  <div className="bg-[#0c0c0c] p-5 rounded-lg border border-white/5 card-noise">
                     <div className="text-[#666] text-xs uppercase tracking-wider mb-2">Energy Class</div>
-                    <div className="text-[#ff6b35] text-4xl font-light">A+</div>
+                    <div className="text-[#ffffff] text-4xl font-light">A+</div>
                   </div>
-                  <div className="bg-[#0c0c0c] p-5 rounded-lg border border-white/5">
+                  <div className="bg-[#0c0c0c] p-5 rounded-lg border border-white/5 card-noise">
                     <div className="text-[#666] text-xs uppercase tracking-wider mb-2">Certification</div>
                     <div className="text-white text-lg font-light">ECODESIGN 2022</div>
                   </div>
                 </div>
-                <div className="flex items-center gap-4 mt-6 text-[#666] text-sm">
+                <div className="flex flex-wrap items-center gap-x-6 gap-y-3 mt-6 text-[#666] text-sm">
                   <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-[#ff6b35]" />
+                    <Check className="w-4 h-4 text-[#ffffff]" />
                     <span>Low emissions</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-[#ff6b35]" />
+                    <Check className="w-4 h-4 text-[#ffffff]" />
                     <span>High efficiency</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-[#ff6b35]" />
+                    <Check className="w-4 h-4 text-[#ffffff]" />
                     <span>Eco-friendly</span>
                   </div>
                 </div>
@@ -419,10 +421,10 @@ export default function ProductDetailPage() {
                   return (
                     <div
                       key={index}
-                      className="flex items-start gap-4 p-5 bg-[#0c0c0c] border border-white/5"
+                      className="flex items-start gap-4 p-5 bg-[#0c0c0c] border border-white/5 card-noise"
                     >
-                      <div className="w-10 h-10 rounded-full bg-[#ff6b35]/10 flex items-center justify-center shrink-0">
-                        <IconComponent className="w-5 h-5 text-[#ff6b35]" />
+                      <div className="w-10 h-10 rounded-full bg-[#ffffff]/10 flex items-center justify-center shrink-0">
+                        <IconComponent className="w-5 h-5 text-[#ffffff]" />
                       </div>
                       <div>
                         <h3 className="text-white text-sm font-medium mb-1">{feature}</h3>
@@ -457,7 +459,7 @@ export default function ProductDetailPage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {relatedProducts.map((relProduct) => (
               <Link key={relProduct.id} href={`/products/${relProduct.id}`} className="block group">
-                <div className="bg-[#1a1a1a] hover:bg-[#2a2a2a] transition-all duration-300">
+                <div className="bg-[#1a1a1a] hover:bg-[#2a2a2a] transition-all duration-300 card-noise">
                   <div className="aspect-square relative overflow-hidden bg-gradient-to-b from-[#1a1a1a] to-[#0c0c0c]">
                     <Image
                       src={relProduct.image}
@@ -469,7 +471,7 @@ export default function ProductDetailPage() {
                     />
                   </div>
                   <div className="p-4 md:p-5">
-                    <h3 className="text-white text-sm font-medium group-hover:text-[#ff6b35] transition-colors">
+                    <h3 className="text-white text-sm font-medium group-hover:text-[#ffffff] transition-colors">
                       {relProduct.name}
                     </h3>
                     <div className="flex items-center justify-between mt-2">

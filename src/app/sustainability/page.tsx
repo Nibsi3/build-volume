@@ -91,10 +91,11 @@ export default function SustainabilityPage() {
             >
               <div className="aspect-square bg-[#0c0c0c] relative overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80"
+                  src="/substainability.jpg"
                   alt="Sustainable forest"
                   fill
-                  className="object-cover opacity-50"
+                  className="object-cover"
+                  quality={90}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0c0c0c] to-transparent" />
               </div>
@@ -135,9 +136,9 @@ export default function SustainabilityPage() {
               <motion.div
                 key={index}
                 variants={fadeIn}
-                className="p-6 bg-[#1a1a1a] border border-white/5 hover:border-white/10 transition-colors"
+                className="p-6 bg-[#1a1a1a] border border-white/5 hover:border-white/10 transition-colors card-noise"
               >
-                <Check className="w-6 h-6 text-[#ff6b35] mb-4" />
+                <Check className="w-6 h-6 text-[#ffffff] mb-4" />
                 <h3 className="text-white text-sm font-medium mb-2">
                   {item.title}
                 </h3>
@@ -165,9 +166,9 @@ export default function SustainabilityPage() {
                 {benefits.map((label, index) => (
                   <div
                     key={index}
-                    className="p-6 bg-[#0c0c0c] border border-white/5 text-center"
+                    className="p-6 bg-[#0c0c0c] border border-white/5 text-center card-noise"
                   >
-                    <Check className="w-6 h-6 text-[#ff6b35] mx-auto mb-3" />
+                    <Check className="w-6 h-6 text-[#ffffff] mx-auto mb-3" />
                     <span className="text-white text-sm font-medium">{label}</span>
                   </div>
                 ))}
@@ -211,7 +212,7 @@ export default function SustainabilityPage() {
           >
             <blockquote className="text-3xl md:text-4xl lg:text-5xl font-light text-white leading-tight mb-8">
               &ldquo;NORDflam creates its products with<br />
-              <span className="text-[#ff6b35]">ECO-FRIENDLY</span> philosophy at heart.&rdquo;
+              <span className="text-[#ffffff]">ECO-FRIENDLY</span> philosophy at heart.&rdquo;
             </blockquote>
             <p className="text-[#666] text-xs tracking-[0.2em] uppercase">
               Our Core Value
@@ -238,13 +239,13 @@ export default function SustainabilityPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/products"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black text-sm font-medium tracking-[0.1em] uppercase hover:bg-[#ff6b35] hover:text-white transition-all"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black text-sm font-medium tracking-[0.1em] uppercase hover:bg-[#ffffff] hover:text-white transition-all"
               >
                 Explore Products
               </Link>
               <Link
                 href="/technology"
-                className="inline-flex items-center gap-3 text-white text-sm tracking-[0.1em] uppercase hover:text-[#ff6b35] transition-colors group px-8 py-4 border border-white/20"
+                className="inline-flex items-center gap-3 text-white text-sm tracking-[0.1em] uppercase hover:text-[#ffffff] transition-colors group px-8 py-4 border border-white/20"
               >
                 Learn About Technology
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

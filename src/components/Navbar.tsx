@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <nav className="absolute top-0 left-0 right-0 z-50 bg-transparent">
       {/* Top accent line */}
-      <div className="h-[2px] bg-gradient-to-r from-transparent via-[#ff6b35] to-transparent opacity-60" />
+      <div className="h-[2px] bg-gradient-to-r from-transparent via-[#ffffff] to-transparent opacity-60" />
       
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-24">
@@ -44,7 +44,7 @@ export default function Navbar() {
                 className="relative text-[11px] font-medium text-white/70 hover:text-white transition-all duration-300 tracking-[0.2em] uppercase group"
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#ff6b35] group-hover:w-full transition-all duration-300" />
+                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#ffffff] group-hover:w-full transition-all duration-300" />
               </Link>
             ))}
           </div>
@@ -62,7 +62,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 text-white hover:text-[#ff6b35] transition-colors"
+            className="lg:hidden p-2 text-white hover:text-[#ffffff] transition-colors"
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -105,7 +105,7 @@ export default function Navbar() {
                 <Link
                   href="/retailers"
                   onClick={() => setIsOpen(false)}
-                  className="inline-block px-6 py-3 bg-[#ff6b35] text-white text-sm font-medium tracking-wider uppercase"
+                  className="inline-block px-6 py-3 bg-white text-black text-sm font-medium tracking-wider uppercase"
                 >
                   Find a Dealer
                 </Link>

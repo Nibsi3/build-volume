@@ -116,10 +116,11 @@ export default function TechnologyPage() {
             >
               <div className="aspect-square bg-[#0c0c0c] relative overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&q=80"
+                  src="/5.png"
                   alt="Manufacturing precision"
                   fill
-                  className="object-cover opacity-60"
+                  className="object-cover"
+                  quality={90}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0c0c0c] to-transparent" />
               </div>
@@ -156,9 +157,9 @@ export default function TechnologyPage() {
               <motion.div
                 key={index}
                 variants={fadeIn}
-                className="p-6 bg-[#1a1a1a] border border-white/5 hover:border-white/10 transition-colors"
+                className="p-6 bg-[#1a1a1a] border border-white/5 hover:border-white/10 transition-colors card-noise"
               >
-                <Check className="w-6 h-6 text-[#ff6b35] mb-4" />
+                <Check className="w-6 h-6 text-[#ffffff] mb-4" />
                 <h3 className="text-white text-sm font-medium mb-2">
                   {feature.title}
                 </h3>
@@ -182,12 +183,13 @@ export default function TechnologyPage() {
               transition={{ duration: 0.8 }}
               className="order-2 lg:order-1"
             >
-              <div className="aspect-square bg-[#0c0c0c] relative overflow-hidden">
+              <div className="aspect-square bg-[#0c0c0c] relative overflow-hidden card-noise">
                 <Image
-                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80"
+                  src="/technology%20picture%201.png"
                   alt="Quality testing laboratory"
                   fill
-                  className="object-cover opacity-60"
+                  className="object-cover"
+                  quality={90}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0c0c0c] to-transparent" />
               </div>
@@ -290,7 +292,7 @@ export default function TechnologyPage() {
             </p>
             <Link
               href="/products"
-              className="inline-flex items-center gap-3 text-white text-sm tracking-[0.1em] uppercase hover:text-[#ff6b35] transition-colors group"
+              className="inline-flex items-center gap-3 text-white text-sm tracking-[0.1em] uppercase hover:text-[#ffffff] transition-colors group"
             >
               Explore Our Products
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

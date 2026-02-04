@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0c0c0c;
+  --foreground: #ffffff;
+  --accent: #ff6b35;
+  --accent-glow: #ff8c5a;
+  --dark-gray: #1a1a1a;
+  --medium-gray: #2a2a2a;
+  --light-gray: #3a3a3a;
+  --text-muted: #888888;
+  --text-secondary: #666666;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-playfair);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Premium dark glass effect */
+.glass-dark {
+  background: rgba(12, 12, 12, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Fire glow effect for images */
+.fire-glow {
+  box-shadow: 0 0 80px rgba(255, 107, 53, 0.4), 0 0 120px rgba(255, 107, 53, 0.2);
+}
+
+/* Subtle card hover */
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  background: var(--medium-gray);
+}
+
+/* Bold display text */
+.display-text {
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+}
+
+/* Uppercase tracking */
+.tracking-ultra {
+  letter-spacing: 0.3em;
+}
+
+/* Gradient overlay for images */
+.image-overlay {
+  position: relative;
+}
+
+.image-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(12, 12, 12, 0.8) 100%);
+}
+
+/* Horizontal line accent */
+.line-accent {
+  width: 60px;
+  height: 1px;
+  background: var(--accent);
+}
+
+/* Product card styling */
+.product-card {
+  background: var(--dark-gray);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  background: var(--medium-gray);
+}
+
+/* Category pill */
+.category-pill {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.category-pill:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.4);
+}

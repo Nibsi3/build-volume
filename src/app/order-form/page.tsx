@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
@@ -23,6 +23,14 @@ const steps: { id: FormStep; label: string; icon: React.ElementType }[] = [
 ];
 
 export default function OrderFormPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#0c0c0c] pt-24" />}>
+      <OrderFormInner />
+    </Suspense>
+  );
+}
+
+function OrderFormInner() {
   const searchParams = useSearchParams();
   const [currentStep, setCurrentStep] = useState<FormStep>("products");
   const [items, setItems] = useState<OrderItem[]>([

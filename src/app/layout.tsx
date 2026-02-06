@@ -17,9 +17,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "NORDflam SA | Premium Sustainable Fireplaces",
-  description: "NORDflam is a trusted name in sustainable heating, delivering exceptional fireplaces to homes across the globe. Over two decades of leadership in sustainable heating technology.",
-  keywords: "fireplaces, sustainable heating, cast iron fireplaces, premium fireplaces, eco-friendly heating, NORDflam",
+  title: "BuildVolume | South Africa's Official Supplier",
+  description: "Discover 3D printing in South Africa with BuildVolume. Explore innovative solutions for personal and industrial 3D applications.",
+  keywords: "3d printers, 3d scanners, additive manufacturing, 3d printing south africa, BuildVolume, filament, laser cutters",
 };
 
 export default function RootLayout({

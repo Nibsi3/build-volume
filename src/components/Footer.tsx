@@ -1,15 +1,25 @@
 import Link from "next/link";
 
 const footerLinks = {
-  navigation: [
-    { href: "/products", label: "Products" },
-    { href: "/technology", label: "Technology" },
-    { href: "/sustainability", label: "Sustainability" },
-    { href: "/retailers", label: "Retailers" },
+  products: [
+    { href: "/shop", label: "Shop" },
+    { href: "/3d-printers", label: "3D Printers" },
+    { href: "/3d-scanners", label: "3D Scanners" },
+    { href: "/3d-consumables", label: "Consumables" },
+    { href: "/spares", label: "Spares" },
+  ],
+  brands: [
+    { href: "/ultimaker-landing-page", label: "Ultimaker" },
+    { href: "/formlabs-landing-page", label: "Formlabs" },
+    { href: "/bambu-lab-landing-page", label: "Bambu Lab" },
+    { href: "/creality-landing-page", label: "Creality" },
   ],
   company: [
-    { href: "/about", label: "About Us" },
-    { href: "/contact", label: "Contact" },
+    { href: "/about-us", label: "About Us" },
+    { href: "/contact-us", label: "Contact Us" },
+    { href: "/support", label: "Support" },
+    { href: "/training-facility", label: "Training" },
+    { href: "/blog", label: "Blog" },
   ],
 };
 
@@ -20,7 +30,7 @@ export default function Footer() {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 pt-20 pb-12">
         <div className="mb-16">
           <h2 className="text-[8vw] md:text-[120px] font-light tracking-[-0.02em] leading-none text-white/5 select-none">
-            NORDFLAM
+            BUILDVOLUME
           </h2>
         </div>
 
@@ -36,25 +46,25 @@ export default function Footer() {
                 <path d="M12 2C8 6 6 10 6 13c0 3.31 2.69 6 6 6s6-2.69 6-6c0-3-2-7-6-11zm0 16c-2.21 0-4-1.79-4-4 0-1.5.5-3 2-5.5 1.5 2.5 2 4 2 5.5 0 2.21-1.79 4-4 4z"/>
               </svg>
               <span className="text-white text-sm tracking-[0.2em] uppercase font-medium">
-                NORDflam
+                BuildVolume
               </span>
             </div>
             <p className="text-[#666] text-sm leading-relaxed max-w-sm mb-6">
-              Over two decades of leadership in sustainable heating technology. 
-              Premium fireplaces designed for modern living.
+              BuildVolume offers you a steadily growing selection of everything you need
+              from DIY 3D printing projects to high-end industrial Additive Manufacturing.
             </p>
             <p className="text-[#444] text-xs">
-              ECODESIGN 2022 Certified
+              Pretoria • Sandton • Century City
             </p>
           </div>
 
-          {/* Navigation */}
+          {/* Products */}
           <div>
             <h3 className="text-[#666] text-xs tracking-[0.2em] uppercase mb-6">
-              Navigation
+              Products
             </h3>
             <ul className="space-y-3">
-              {footerLinks.navigation.map((link) => (
+              {footerLinks.products.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -67,22 +77,48 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Brands */}
           <div>
             <h3 className="text-[#666] text-xs tracking-[0.2em] uppercase mb-6">
-              Contact
+              Brands
             </h3>
             <ul className="space-y-3">
+              {footerLinks.brands.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-[#888] hover:text-white transition-colors text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div>
+            <h3 className="text-[#666] text-xs tracking-[0.2em] uppercase mb-6">
+              Company
+            </h3>
+            <ul className="space-y-3">
+              {footerLinks.company.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-[#888] hover:text-white transition-colors text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
               <li>
                 <a
-                  href="mailto:info@nordflamsa.co.za"
+                  href="mailto:info@buildvolume.co.za"
                   className="text-[#888] hover:text-white transition-colors text-sm"
                 >
-                  info@nordflamsa.co.za
+                  info@buildvolume.co.za
                 </a>
-              </li>
-              <li className="text-[#666] text-sm">
-                Southern Africa
               </li>
             </ul>
           </div>
@@ -93,7 +129,7 @@ export default function Footer() {
       <div className="border-t border-white/5">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[#444] text-xs">
-            © {new Date().getFullYear()} NORDflam SA. All Rights Reserved.
+            © {new Date().getFullYear()} BuildVolume. All Rights Reserved.
           </p>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="text-[#444] hover:text-[#888] transition-colors text-xs">

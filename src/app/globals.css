@@ -120,3 +120,19 @@ html {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.4);
 }
+
+/* Product image with transparent background effect */
+.product-image-blend {
+  mix-blend-mode: multiply;
+  filter: contrast(1.05) brightness(1.02);
+}
+
+/* For dark theme - invert blend for white bg products */
+.product-image-clean {
+  background: white;
+  border-radius: 8px;
+}
+
+.product-image-clean img {
+  mix-blend-mode: darken;
+}

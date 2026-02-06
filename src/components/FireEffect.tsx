@@ -8,6 +8,15 @@ interface FireEffectProps {
   intensity?: number;
 }
 
+const EMBER_PARTICLES: Array<{ xOffset: number; yOffset: number; duration: number }> = [
+  { xOffset: -8, yOffset: -12, duration: 1.6 },
+  { xOffset: 10, yOffset: -18, duration: 2.1 },
+  { xOffset: -14, yOffset: -22, duration: 1.9 },
+  { xOffset: 6, yOffset: -26, duration: 2.4 },
+  { xOffset: 16, yOffset: -14, duration: 1.8 },
+  { xOffset: -4, yOffset: -30, duration: 2.2 },
+];
+
 export default function FireEffect({ className = "", intensity = 1 }: FireEffectProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0.5, y: 0.5 });
@@ -79,7 +88,7 @@ export default function FireEffect({ className = "", intensity = 1 }: FireEffect
       {/* Ember particles */}
       {isHovering && (
         <>
-          {[...Array(6)].map((_, i) => (
+          {EMBER_PARTICLES.map((p, i) => (
             <motion.div
               key={i}
               className="absolute w-1 h-1 rounded-full bg-[#ff6b35]"
@@ -90,13 +99,13 @@ export default function FireEffect({ className = "", intensity = 1 }: FireEffect
                 scale: 0
               }}
               animate={{
-                left: `${mousePosition.x * 100 + (Math.random() - 0.5) * 20}%`,
-                top: `${mousePosition.y * 100 - Math.random() * 30}%`,
+                left: `${mousePosition.x * 100 + p.xOffset}%`,
+                top: `${mousePosition.y * 100 + p.yOffset}%`,
                 opacity: [0, 1, 0],
                 scale: [0, 1.5, 0],
               }}
               transition={{
-                duration: 1.5 + Math.random(),
+                duration: p.duration,
                 repeat: Infinity,
                 delay: i * 0.2,
                 ease: "easeOut",

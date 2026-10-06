@@ -52,7 +52,7 @@ export default function Home() {
               {/* Premium Badge */}
               <div className="inline-flex items-center gap-3 px-4 py-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full mb-8">
                 <div className="w-2 h-2 rounded-full bg-[#ffffff] animate-pulse" />
-                <span className="text-[#999] text-xs tracking-widest uppercase">HERO_BADGE_PLACEHOLDER</span>
+                <span className="text-[#999] text-xs tracking-widest uppercase">3D Printer Supplier • South Africa</span>
               </div>
 
               {/* Brand Name - Large Display */}

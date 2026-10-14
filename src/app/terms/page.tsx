@@ -1,5 +1,2 @@
-import { redirect } from "next/navigation";
-
-export default function TermsPage() {
-  redirect("https://www.buildvolume.co.za/terms-and-conditions");
-}
+import Link from "next/link";
+export default function Page(){return <section className="min-h-screen pt-40 pb-24 px-6 max-w-4xl mx-auto text-white"><p className="text-sm tracking-widest uppercase text-amber-200">Independent concept design</p><h1 className="text-4xl md:text-6xl my-8">Concept terms</h1><p className="text-lg leading-relaxed text-white/75">This is a self-initiated portfolio design for a fictional brand. Content is illustrative and offers no real products, installations, guarantees, certifications or commercial services.</p><div className="flex gap-6 flex-wrap mt-10"><Link href="/" className="underline">Explore the design</Link><Link href="/concept" className="underline">About this concept</Link></div></section>;}

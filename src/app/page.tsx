@@ -13,8 +13,8 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/3d-printer-illuminated-futuristic-scene.jpg"
-            alt="BuildVolume"
+            src="/concept/hero.svg"
+            alt="Layerforge"
             fill
             className="object-cover"
             priority
@@ -58,8 +58,8 @@ export default function Home() {
               {/* Brand Name - Large Display */}
               <div className="mb-8 drop-shadow-[0_2px_24px_rgba(0,0,0,0.65)]">
                 <Image
-                  src="/logo.png"
-                  alt="BuildVolume"
+                  src="/concept/logo.svg"
+                  alt="Layerforge"
                   width={900}
                   height={300}
                   priority
@@ -74,7 +74,7 @@ export default function Home() {
 
               {/* Description */}
               <p className="text-white/75 text-lg leading-relaxed max-w-2xl mb-10 drop-shadow-[0_2px_18px_rgba(0,0,0,0.55)]">
-                Discover 3D printing in South Africa with BuildVolume. Explore innovative solutions
+                Discover 3D printing in South Africa with Layerforge. Explore innovative solutions
                 for personal and industrial 3D applications.
               </p>
 
@@ -107,8 +107,8 @@ export default function Home() {
             {/* Left - Image */}
             <div className="aspect-[4/3] bg-[#1a1a1a] rounded-sm overflow-hidden relative">
               <Image
-                src="/pexels-papaz-30620861.png"
-                alt="BuildVolume"
+                src="/concept/detail.svg"
+                alt="Layerforge"
                 fill
                 className="object-cover"
                 quality={90}
@@ -119,10 +119,10 @@ export default function Home() {
             <div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white leading-tight mb-6">
                 ABOUT<br />
-                <span className="text-[#666]">BUILDVOLUME</span>
+                <span className="text-[#aaa]">Layerforge</span>
               </h2>
-              <p className="text-[#666] text-lg leading-relaxed mb-8 max-w-lg">
-                BuildVolume is all about bringing 3D printing into the lives of regular people.
+              <p className="text-[#aaa] text-lg leading-relaxed mb-8 max-w-lg">
+                Layerforge is all about bringing 3D printing into the lives of regular people.
                 Due to the fast development of 3D printers, 3D scanners and 3D modelling software,
                 3D printing is becoming more and more interesting and affordable for personal users.
               </p>
@@ -142,13 +142,13 @@ export default function Home() {
       <section className="py-24 bg-[#0c0c0c] border-t border-white/5">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="mb-12">
-            <span className="text-[#666] text-xs tracking-widest uppercase">Explore</span>
+            <span className="text-[#aaa] text-xs tracking-widest uppercase">Explore</span>
             <h2 className="text-3xl md:text-4xl font-light text-white mt-4">QUICK LINKS</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <a
-              href="https://www.buildvolume.co.za/3d-printers"
+              href="/3d-printers"
               target="_blank"
               rel="noopener noreferrer"
               className="block p-6 bg-[#1a1a1a] hover:bg-[#2a2a2a] transition-colors group"
@@ -156,11 +156,11 @@ export default function Home() {
               <div className="text-white text-sm font-medium mb-2 group-hover:text-[#ffffff] transition-colors">
                 3D Printers
               </div>
-              <div className="text-[#666] text-xs">Browse the complete 3D printer range</div>
+              <div className="text-[#aaa] text-xs">Browse the complete 3D printer range</div>
             </a>
 
             <a
-              href="https://www.buildvolume.co.za/3d-scanners"
+              href="/concept"
               target="_blank"
               rel="noopener noreferrer"
               className="block p-6 bg-[#1a1a1a] hover:bg-[#2a2a2a] transition-colors group"
@@ -168,11 +168,11 @@ export default function Home() {
               <div className="text-white text-sm font-medium mb-2 group-hover:text-[#ffffff] transition-colors">
                 3D Scanners
               </div>
-              <div className="text-[#666] text-xs">Explore scanning solutions</div>
+              <div className="text-[#aaa] text-xs">Explore scanning solutions</div>
             </a>
 
             <a
-              href="https://www.buildvolume.co.za/support"
+              href="/concept"
               target="_blank"
               rel="noopener noreferrer"
               className="block p-6 bg-[#1a1a1a] hover:bg-[#2a2a2a] transition-colors group"
@@ -180,7 +180,7 @@ export default function Home() {
               <div className="text-white text-sm font-medium mb-2 group-hover:text-[#ffffff] transition-colors">
                 Support
               </div>
-              <div className="text-[#666] text-xs">Get help, book-in support, and resources</div>
+              <div className="text-[#aaa] text-xs">Get help, book-in support, and resources</div>
             </a>
           </div>
         </div>

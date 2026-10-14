@@ -1,5 +1,2 @@
-import { redirect } from "next/navigation";
-
-export default function PrivacyPage() {
-  redirect("https://www.buildvolume.co.za/privacy-policy");
-}
+import Link from "next/link";
+export default function Page(){return <section className="min-h-screen pt-40 pb-24 px-6 max-w-4xl mx-auto text-white"><p className="text-sm tracking-widest uppercase text-amber-200">Independent concept design</p><h1 className="text-4xl md:text-6xl my-8">Demo privacy</h1><p className="text-lg leading-relaxed text-white/75">This independent concept has no enquiry backend, analytics service, payments or mailing list. Its forms demonstrate local browser interactions and send nothing. Use fictional sample information when trying a form.</p><div className="flex gap-6 flex-wrap mt-10"><Link href="/" className="underline">Explore the design</Link><Link href="/concept" className="underline">About this concept</Link></div></section>;}

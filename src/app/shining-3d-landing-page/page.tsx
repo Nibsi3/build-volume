@@ -2,9 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { scanners, getScannersByBrand } from "@/lib/scannerData";
-
-export const dynamic = "force-dynamic";
-
 export default function Shining3DPage() {
   const shining3DScanners = getScannersByBrand("Shining 3D");
 
@@ -14,10 +11,10 @@ export default function Shining3DPage() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a] to-[#0c0c0c]" />
         <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
-          <span className="text-[#666] text-xs tracking-widest uppercase">Official Partner</span>
+          <span className="text-[#aaa] text-xs tracking-widest uppercase">Independent catalogue study</span>
           <h1 className="text-5xl md:text-6xl font-light text-white mt-4 mb-6">SHINING 3D</h1>
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
-            Professional 3D scanning solutions for reverse engineering, quality control, and digital archiving. BuildVolume is South Africa&apos;s official Shining 3D partner.
+            Professional 3D scanning solutions for reverse engineering, quality control, and digital archiving. This is an independent sample catalogue; no manufacturer partnership is implied.
           </p>
         </div>
       </section>

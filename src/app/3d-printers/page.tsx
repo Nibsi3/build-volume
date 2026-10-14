@@ -2,9 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { printers, getPrintersByBrand, type Printer } from "@/lib/printerData";
-
- export const dynamic = "force-dynamic";
-
 const brands: { name: Printer["brand"]; href: string }[] = [
   { name: "Ultimaker", href: "/ultimaker-landing-page" },
   { name: "Formlabs", href: "/formlabs-landing-page" },
@@ -36,10 +33,10 @@ export default function ThreeDPrintersPage() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a] to-[#0c0c0c]" />
         <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
-          <span className="text-[#666] text-xs tracking-widest uppercase">Professional & Desktop</span>
+          <span className="text-[#aaa] text-xs tracking-widest uppercase">Professional & Desktop</span>
           <h1 className="text-5xl md:text-6xl font-light text-white mt-4 mb-6">3D PRINTERS</h1>
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
-            South Africa&apos;s official supplier of premium 3D printers. From desktop to industrial, find the perfect machine for your needs.
+            South Africa&apos;s fictional catalogue of premium 3D printers. From desktop to industrial, find the perfect machine for your needs.
           </p>
         </div>
       </section>
@@ -91,7 +88,7 @@ export default function ThreeDPrintersPage() {
                             fill
                             className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
                             sizes="(max-width: 768px) 50vw, 20vw"
-                            quality={100}
+                            quality={90}
                             unoptimized
                           />
                         ) : (

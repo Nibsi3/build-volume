@@ -35,8 +35,8 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="relative group">
             <Image
-              src="/logo.png"
-              alt="BuildVolume"
+              src="/concept/logo.svg"
+              alt="Layerforge"
               width={180}
               height={48}
               className="h-8 w-auto group-hover:opacity-80 transition-opacity"
@@ -135,7 +135,7 @@ export default function Navbar() {
               href="/order-form"
               className="px-6 py-2.5 border border-white/20 text-[11px] font-medium text-white tracking-[0.15em] uppercase hover:bg-white hover:text-black transition-all duration-300"
             >
-              Order Now
+              Try Demo Order
             </Link>
           </div>
 
@@ -143,7 +143,7 @@ export default function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden p-2 text-white hover:text-[#ffffff] transition-colors"
-            aria-label="Toggle menu"
+            aria-label="Toggle menu" aria-expanded={isOpen}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -254,7 +254,7 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className="inline-block px-6 py-3 bg-white text-black text-sm font-medium tracking-wider uppercase"
                 >
-                  Order Now
+                  Try Demo Order
                 </Link>
               </motion.div>
             </div>

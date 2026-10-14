@@ -65,7 +65,7 @@ export default function FAQPage() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a] to-[#0c0c0c]" />
         <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
-          <span className="text-[#666] text-xs tracking-widest uppercase">Help Center</span>
+          <span className="text-[#aaa] text-xs tracking-widest uppercase">Help Center</span>
           <h1 className="text-5xl md:text-6xl font-light text-white mt-4 mb-6">FAQ</h1>
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
             Find answers to commonly asked questions about our products and services.

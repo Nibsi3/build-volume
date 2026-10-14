@@ -3,10 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { printers, getPrinterBySlug, getPrintersByBrand } from "@/lib/printerData";
-
- export const dynamic = "force-dynamic";
-
- const IMAGE_VERSION = "2026-02-05";
+const IMAGE_VERSION = "2026-02-05";
 
  function withCacheBuster(src: string): string {
    const v = process.env.NODE_ENV === "development" ? String(Date.now()) : IMAGE_VERSION;
@@ -63,7 +60,7 @@ export default async function PrinterDetailPage({
                   className="object-contain p-8"
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  quality={100}
+                  quality={90}
                   unoptimized
                 />
               </div>
@@ -82,7 +79,7 @@ export default async function PrinterDetailPage({
                         fill
                         className="object-contain p-2"
                         sizes="100px"
-                        quality={100}
+                        quality={90}
                         unoptimized
                       />
                     </div>
@@ -115,10 +112,10 @@ export default async function PrinterDetailPage({
                   Specifications
                 </h3>
                 <div className="grid gap-3">
-                  {printer.specs.buildVolume && (
+                  {printer.specs.Layerforge && (
                     <div className="flex justify-between py-2 border-b border-white/5">
-                      <span className="text-white/40">Build Volume</span>
-                      <span className="text-white">{printer.specs.buildVolume}</span>
+                      <span className="text-white/40">Layerforge</span>
+                      <span className="text-white">{printer.specs.Layerforge}</span>
                     </div>
                   )}
                   {printer.specs.resolution && (

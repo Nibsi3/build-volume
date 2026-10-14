@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getStoreProductsSitemap, getProductJsonLdBySlug, formatSlugTitle } from "@/lib/buildvolumeStore";
+import { getStoreProductsSitemap, getProductJsonLdBySlug, formatSlugTitle } from "@/lib/LayerforgeStore";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 
 type ProductPageProps = {
@@ -54,7 +54,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   className="object-contain p-8"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   priority
-                  quality={100}
+                  quality={90}
                   unoptimized
                 />
               </div>
@@ -70,7 +70,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                       fill
                       className="object-contain p-2"
                       sizes="25vw"
-                      quality={100}
+                      quality={90}
                       unoptimized
                     />
                   </div>
@@ -81,7 +81,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
           {/* Product Info */}
           <div>
-            <span className="text-[#666] text-xs tracking-widest uppercase">Product</span>
+            <span className="text-[#aaa] text-xs tracking-widest uppercase">Product</span>
             <h1 className="text-3xl md:text-4xl font-light text-white mt-2 mb-6">{title}</h1>
             
             {price && (
@@ -111,7 +111,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black text-sm tracking-widest uppercase hover:bg-white/90 transition-colors w-full justify-center"
               >
-                Buy Now <ExternalLink className="w-4 h-4" />
+                Preview Order <ExternalLink className="w-4 h-4" />
               </a>
               <Link
                 href={`/order-form?product=${encodeURIComponent(title)}`}
@@ -120,7 +120,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 Order Form
               </Link>
               <p className="text-white/40 text-xs text-center">
-                You will be redirected to complete your purchase
+                Independent concept — this action opens a local demo; no purchase is possible.
               </p>
             </div>
 

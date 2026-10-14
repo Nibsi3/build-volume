@@ -1,45 +1,42 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-
-export const dynamic = "force-dynamic";
-
 const categories = [
   {
     name: "Ultimaker Spares",
-    description: "Official replacement parts for Ultimaker 3D printers.",
+    description: "Illustrative replacement parts for Ultimaker 3D printers.",
     href: "/shop?category=spares&brand=ultimaker",
-    image: "/products/spares/spare-1.jpg",
+    image: "/concept/detail.svg",
   },
   {
     name: "Formlabs Spares",
     description: "Genuine parts and accessories for Formlabs printers.",
     href: "/shop?category=spares&brand=formlabs",
-    image: "/products/spares/spare-2.jpg",
+    image: "/concept/detail.svg",
   },
   {
     name: "Bambu Lab Spares",
     description: "Replacement components for Bambu Lab printers.",
     href: "/shop?category=spares&brand=bambu-lab",
-    image: "/products/spares/spare-1.jpg",
+    image: "/concept/detail.svg",
   },
   {
     name: "Creality Spares",
     description: "Parts and upgrades for Creality 3D printers.",
     href: "/shop?category=spares&brand=creality",
-    image: "/products/spares/spare-2.jpg",
+    image: "/concept/detail.svg",
   },
   {
     name: "Zortrax Spares",
-    description: "Official spare parts for Zortrax machines.",
+    description: "Illustrative spare parts for Zortrax machines.",
     href: "/shop?category=spares&brand=zortrax",
-    image: "/products/spares/spare-1.jpg",
+    image: "/concept/detail.svg",
   },
   {
     name: "E3D Spares",
     description: "Hotends, nozzles, and components from E3D.",
     href: "/shop?category=spares&brand=e3d",
-    image: "/products/spares/spare-2.jpg",
+    image: "/concept/detail.svg",
   },
 ];
 
@@ -51,7 +48,7 @@ export default function SparesPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a] to-[#0c0c0c]" />
         <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="text-center">
-            <span className="text-[#666] text-xs tracking-widest uppercase">Replacement Parts</span>
+            <span className="text-[#aaa] text-xs tracking-widest uppercase">Replacement Parts</span>
             <h1 className="text-5xl md:text-6xl font-light text-white mt-4 mb-6">SPARES</h1>
             <p className="text-white/60 text-lg max-w-2xl mx-auto">
               Keep your 3D printers running with genuine replacement parts and accessories from all major brands.

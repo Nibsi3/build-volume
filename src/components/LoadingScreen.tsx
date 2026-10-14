@@ -131,7 +131,7 @@ export default function LoadingScreen() {
         {/* Brand Text */}
         <div className="absolute left-1/2 top-[40%] -translate-x-1/2 -translate-y-1/2 text-center">
           <h1 className="text-5xl md:text-7xl font-light text-white tracking-[0.3em] mb-6 font-serif">
-            BuildVolume
+            Layerforge
           </h1>
           <p className="text-[#ffc107] text-sm md:text-lg tracking-[0.15em] uppercase font-light italic">
             3D Printing Solutions

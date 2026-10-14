@@ -2,10 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getPrintersByBrand } from "@/lib/printerData";
 import { ArrowRight } from "lucide-react";
-
- export const dynamic = "force-dynamic";
-
- const IMAGE_VERSION = "2026-02-05";
+const IMAGE_VERSION = "2026-02-05";
 
  function withCacheBuster(src: string): string {
    const v = process.env.NODE_ENV === "development" ? String(Date.now()) : IMAGE_VERSION;
@@ -21,10 +18,10 @@ export default function BambuLabPage() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a] to-[#0c0c0c]" />
         <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
-          <span className="text-[#666] text-xs tracking-widest uppercase">Official Partner</span>
+          <span className="text-[#aaa] text-xs tracking-widest uppercase">Independent catalogue study</span>
           <h1 className="text-5xl md:text-6xl font-light text-white mt-4 mb-6">BAMBU LAB</h1>
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
-            High-speed, high-quality 3D printers with advanced features. BuildVolume is South Africa&apos;s official Bambu Lab partner.
+            High-speed, high-quality 3D printers with advanced features. This is an independent sample catalogue; no manufacturer partnership is implied.
           </p>
         </div>
       </section>

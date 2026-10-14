@@ -17,9 +17,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "BuildVolume | South Africa's Official Supplier",
-  description: "Discover 3D printing in South Africa with BuildVolume. Explore innovative solutions for personal and industrial 3D applications.",
-  keywords: "3d printers, 3d scanners, additive manufacturing, 3d printing south africa, BuildVolume, filament, laser cutters",
+  metadataBase: new URL("https://layerforge-concept.cameronfalck03.workers.dev"),
+  robots: { index: false, follow: true },
+  title: "Layerforge | Independent Website Concept",
+  description: "Layerforge is an independent website concept for a fictional 3D printing and scanning brand. Designed by Pixaloom; no commissioned client, sales or services.",
+  keywords: "3d printers, 3d scanners, additive manufacturing, 3d printing south africa, Layerforge, filament, laser cutters",
 };
 
 export default function RootLayout({
@@ -33,7 +35,8 @@ export default function RootLayout({
         className={`${playfair.variable} ${inter.variable} antialiased bg-[#0a0a0a] text-[#f5f5f5]`}
       >
         <Navbar />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
+        <aside className="concept-notice" aria-label="Independent concept disclosure"><strong>Layerforge · Independent concept design</strong><span> Fictional brand, created by Pixaloom as a self-initiated portfolio study. No commissioned client or trading business. Prices, specifications and service content are illustrative. Forms are local demos and send nothing.</span><a href="/concept">About this concept</a></aside>
         <Footer />
       </body>
     </html>

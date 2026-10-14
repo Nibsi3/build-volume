@@ -30,7 +30,7 @@ export default function Footer() {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 pt-20 pb-12">
         <div className="mb-16">
           <h2 className="text-[8vw] md:text-[120px] font-light tracking-[-0.02em] leading-none text-white/5 select-none">
-            BUILDVOLUME
+            Layerforge
           </h2>
         </div>
 
@@ -46,21 +46,19 @@ export default function Footer() {
                 <path d="M12 2C8 6 6 10 6 13c0 3.31 2.69 6 6 6s6-2.69 6-6c0-3-2-7-6-11zm0 16c-2.21 0-4-1.79-4-4 0-1.5.5-3 2-5.5 1.5 2.5 2 4 2 5.5 0 2.21-1.79 4-4 4z"/>
               </svg>
               <span className="text-white text-sm tracking-[0.2em] uppercase font-medium">
-                BuildVolume
+                Layerforge
               </span>
             </div>
-            <p className="text-[#666] text-sm leading-relaxed max-w-sm mb-6">
-              BuildVolume offers you a steadily growing selection of everything you need
+            <p className="text-[#aaa] text-sm leading-relaxed max-w-sm mb-6">
+              Layerforge offers you a steadily growing selection of everything you need
               from DIY 3D printing projects to high-end industrial Additive Manufacturing.
             </p>
-            <p className="text-[#444] text-xs">
-              Pretoria • Sandton • Century City
-            </p>
+            <p className="text-white/60 text-sm">Independent concept · fictional brand · no business contacts.</p>
           </div>
 
           {/* Products */}
           <div>
-            <h3 className="text-[#666] text-xs tracking-[0.2em] uppercase mb-6">
+            <h3 className="text-[#aaa] text-xs tracking-[0.2em] uppercase mb-6">
               Products
             </h3>
             <ul className="space-y-3">
@@ -79,7 +77,7 @@ export default function Footer() {
 
           {/* Brands */}
           <div>
-            <h3 className="text-[#666] text-xs tracking-[0.2em] uppercase mb-6">
+            <h3 className="text-[#aaa] text-xs tracking-[0.2em] uppercase mb-6">
               Brands
             </h3>
             <ul className="space-y-3">
@@ -98,7 +96,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="text-[#666] text-xs tracking-[0.2em] uppercase mb-6">
+            <h3 className="text-[#aaa] text-xs tracking-[0.2em] uppercase mb-6">
               Company
             </h3>
             <ul className="space-y-3">
@@ -114,10 +112,10 @@ export default function Footer() {
               ))}
               <li>
                 <a
-                  href="mailto:info@buildvolume.co.za"
+                  href="/concept"
                   className="text-[#888] hover:text-white transition-colors text-sm"
                 >
-                  info@buildvolume.co.za
+                  Local demo only
                 </a>
               </li>
             </ul>
@@ -128,14 +126,14 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/5">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[#444] text-xs">
-            © {new Date().getFullYear()} BuildVolume. All Rights Reserved.
+          <p className="text-[#aaa] text-xs">
+            © {new Date().getFullYear()} Layerforge. Independent concept design.
           </p>
           <div className="flex items-center gap-6">
-            <Link href="/privacy" className="text-[#444] hover:text-[#888] transition-colors text-xs">
+            <Link href="/privacy" className="text-[#aaa] hover:text-[#888] transition-colors text-xs">
               Privacy
             </Link>
-            <Link href="/terms" className="text-[#444] hover:text-[#888] transition-colors text-xs">
+            <Link href="/terms" className="text-[#aaa] hover:text-[#888] transition-colors text-xs">
               Terms
             </Link>
           </div>

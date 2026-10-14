@@ -2,9 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { scanners, getScannersByBrand, type Scanner } from "@/lib/scannerData";
-
-export const dynamic = "force-dynamic";
-
 const brands: { name: Scanner["brand"]; href: string }[] = [
   { name: "Shining 3D", href: "/shining-3d" },
   { name: "Creality", href: "/creality-scanners" },
@@ -23,7 +20,7 @@ export default function ScannersPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a] to-[#0c0c0c]" />
         <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
           <div className="text-center">
-            <span className="text-[#666] text-xs tracking-widest uppercase">Precision Scanning</span>
+            <span className="text-[#aaa] text-xs tracking-widest uppercase">Precision Scanning</span>
             <h1 className="text-5xl md:text-6xl font-light text-white mt-4 mb-6">3D SCANNERS</h1>
             <p className="text-white/60 text-lg max-w-2xl mx-auto">
               Capture reality with precision. Our range of 3D scanners delivers accurate digital models for reverse engineering, quality control, and creative applications.
@@ -77,7 +74,7 @@ export default function ScannersPage() {
                         fill
                         className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
                         sizes="(max-width: 768px) 50vw, 20vw"
-                        quality={100}
+                        quality={90}
                         unoptimized
                       />
                     </div>

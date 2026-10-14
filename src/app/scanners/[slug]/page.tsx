@@ -3,9 +3,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { getScannerBySlug, scanners } from "@/lib/scannerData";
-
-export const dynamic = "force-dynamic";
-
 export function generateStaticParams() {
   return scanners.map((scanner) => ({
     slug: scanner.slug,
@@ -49,7 +46,7 @@ export default async function ScannerDetailPage({
                 fill
                 className="object-contain p-8"
                 priority
-                quality={100}
+                quality={90}
                 unoptimized
               />
             </div>
@@ -65,7 +62,7 @@ export default async function ScannerDetailPage({
                       alt={`${scanner.name} view ${index + 2}`}
                       fill
                       className="object-contain p-2"
-                      quality={100}
+                      quality={90}
                       unoptimized
                     />
                   </div>
@@ -77,7 +74,7 @@ export default async function ScannerDetailPage({
           {/* Product Info */}
           <div className="space-y-8">
             <div>
-              <span className="text-[#666] text-xs tracking-widest uppercase">
+              <span className="text-[#aaa] text-xs tracking-widest uppercase">
                 {scanner.brand}
               </span>
               <h1 className="text-4xl md:text-5xl font-light text-white mt-2">

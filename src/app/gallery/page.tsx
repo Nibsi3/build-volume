@@ -12,7 +12,7 @@ const events = [
   {
     title: "Bambu Lab Product Launch",
     date: "February 28, 2025",
-    location: "BuildVolume Pretoria",
+    location: "Layerforge Pretoria",
     description: "Be the first to see the latest Bambu Lab innovations.",
   },
   {
@@ -30,10 +30,10 @@ export default function GalleryPage() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a] to-[#0c0c0c]" />
         <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
-          <span className="text-[#666] text-xs tracking-widest uppercase">News & Updates</span>
+          <span className="text-[#aaa] text-xs tracking-widest uppercase">News & Updates</span>
           <h1 className="text-5xl md:text-6xl font-light text-white mt-4 mb-6">PRESS & EVENTS</h1>
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
-            Stay updated with the latest news, events, and happenings from BuildVolume.
+            Stay updated with the latest news, events, and happenings from Layerforge.
           </p>
         </div>
       </section>
@@ -70,9 +70,9 @@ export default function GalleryPage() {
           <div className="space-y-6">
             <div className="bg-[#1a1a1a] border border-white/5 p-6">
               <span className="text-white/40 text-xs">January 2025</span>
-              <h3 className="text-white text-lg font-medium mt-2">BuildVolume Announces Partnership with Bambu Lab</h3>
+              <h3 className="text-white text-lg font-medium mt-2">Layerforge Announces Partnership with Bambu Lab</h3>
               <p className="text-white/60 text-sm mt-2">
-                BuildVolume is now the official distributor of Bambu Lab products in South Africa.
+                Layerforge is now the official distributor of Bambu Lab products in South Africa.
               </p>
             </div>
             <div className="bg-[#1a1a1a] border border-white/5 p-6">

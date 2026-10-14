@@ -1,35 +1,5 @@
-# buildvolume
+# Layerforge — independent website concept
 
-<!-- color-strip -->
-![build](https://img.shields.io/badge/build-passing-22c55e) ![coverage](https://img.shields.io/badge/coverage-growing-06b6d4) ![focus](https://img.shields.io/badge/focus-product%20quality-a855f7)
+Self-initiated Pixaloom portfolio study for a fictional 3D printing and scanning brand. Not commissioned client work, an operating business or a commercial storefront. Navigation and catalogue interactions demonstrate interface design; forms are local demos and send nothing. Sample prices and specifications are illustrative. Original SVG assets are created for this project; no client photographs, logos or endorsements are used.
 
-
-## Overview
-This repository contains active product code and implementation details for the **buildvolume** project.
-
-## Highlights
-- Clean project structure with separated app/data/config concerns.
-- Production-oriented setup with environment-driven configuration.
-- Ready for extension with tests, CI checks, and deployment workflows.
-
-## Tech Stack
-- Node.js
-- TypeScript
-- React
-- Next.js
-- Tailwind CSS
-
-## Run Locally
-1. Clone the repository and move into the project folder.
-2. Install dependencies (`npm install`, `pnpm install`, or the package manager used by the project).
-3. Create a local `.env` file if environment variables are required.
-4. Start the development server and verify the main flow works end-to-end.
-
-## Repository Layout
-- `public/`
-- `src/`
-
-## Security Notes
-- Keep credentials in environment variables, never in tracked files.
-- Rotate and replace any key immediately if exposure is suspected.
-- Use least-privilege tokens for third-party integrations.
+Run `npm ci`, `npm run build`, and `npx tsc --noEmit` to validate. Publication targets are verified separately in the application handoff.

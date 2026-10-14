@@ -23,7 +23,7 @@
    pointer-events: none;
    border-radius: inherit;
    opacity: 0.06;
-   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='/concept' width='256' height='256'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
    background-size: 220px 220px;
    mix-blend-mode: overlay;
  }
@@ -136,3 +136,6 @@ html {
 .product-image-clean img {
   mix-blend-mode: darken;
 }
+
+/* Honest project provenance and keyboard access across every concept route. */
+.concept-notice{padding:28px max(24px,calc((100vw - 1280px)/2));background:#151515;color:#ddd;font-size:14px;line-height:1.7;border-top:1px solid #444}.concept-notice strong{display:block;color:#fff}.concept-notice a{display:inline-block;margin:12px 0 0;color:#f5d49c;text-decoration:underline}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #eac78e;outline-offset:5px}img{max-width:100%}

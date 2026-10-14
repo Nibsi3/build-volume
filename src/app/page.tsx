@@ -52,7 +52,7 @@ export default function Home() {
               {/* Premium Badge */}
               <div className="inline-flex items-center gap-3 px-4 py-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full mb-8">
                 <div className="w-2 h-2 rounded-full bg-[#ffffff] animate-pulse" />
-                <span className="text-[#999] text-xs tracking-widest uppercase">3D Printer Supplier • South Africa</span>
+                <span className="text-[#999] text-xs tracking-widest uppercase">Independent 3D Printing Concept</span>
               </div>
 
               {/* Brand Name - Large Display */}
@@ -74,8 +74,8 @@ export default function Home() {
 
               {/* Description */}
               <p className="text-white/75 text-lg leading-relaxed max-w-2xl mb-10 drop-shadow-[0_2px_18px_rgba(0,0,0,0.55)]">
-                Discover 3D printing in South Africa with Layerforge. Explore innovative solutions
-                for personal and industrial 3D applications.
+                Layerforge is a self-initiated design study for a fictional 3D printing brand.
+                Explore an illustrative catalogue and local demo interactions.
               </p>
 
               {/* CTA Buttons */}
@@ -84,14 +84,14 @@ export default function Home() {
                   href="/shop"
                   className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black text-sm tracking-widest uppercase hover:bg-[#cccccc] transition-all group"
                 >
-                  Shop Now
+                  Explore Catalogue
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link
                   href="/contact-us"
                   className="inline-flex items-center gap-3 px-8 py-4 border border-white/20 text-white text-sm tracking-widest uppercase hover:bg-white/5 transition-all"
                 >
-                  Contact Us
+                  Try Demo Enquiry
                 </Link>
               </div>
               </div>

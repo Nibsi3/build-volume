@@ -7,7 +7,7 @@ export type Printer = {
   price: string;
   images: string[];
   specs: {
-    Layerforge?: string;
+    printDimensions?: string;
     resolution?: string;
     materials?: string;
     connectivity?: string;
@@ -32,7 +32,7 @@ export const printers: Printer[] = [
     price: "R41 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "200 x 200 x 220 mm",
+      printDimensions: "200 x 200 x 220 mm",
       resolution: "100 - 400 micron",
       materials: "PLA, Tough PLA, MakerBot Precision PLA",
       connectivity: "Wi-Fi (2.4GHz/5GHz), Ethernet, USB",
@@ -56,11 +56,11 @@ export const printers: Printer[] = [
     name: "Ultimaker S5",
     brand: "Ultimaker",
     slug: "ultimaker-s5",
-    description: "The Ultimaker S5 is a large-format dual extrusion 3D printer engineered for professional environments. With its generous 330 x 240 x 300 mm Layerforge, it handles complex multi-material prints with ease. The swappable print core system enables quick material changes, while active bed leveling ensures perfect first layers every time. Ideal for functional prototypes, manufacturing aids, and end-use parts.",
+    description: "The Ultimaker S5 is a large-format dual extrusion 3D printer engineered for professional environments. With its generous 330 x 240 x 300 mm print dimensions, it handles complex multi-material prints with ease. The swappable print core system enables quick material changes, while active bed leveling ensures perfect first layers every time. Ideal for functional prototypes, manufacturing aids, and end-use parts.",
     price: "R168 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "330 x 240 x 300 mm",
+      printDimensions: "330 x 240 x 300 mm",
       resolution: "20 - 600 micron (layer height)",
       materials: "PLA, ABS, Nylon, TPU 95A, PVA, PP, CPE, CPE+, PC, Breakaway",
       connectivity: "Wi-Fi (2.4GHz/5GHz), Ethernet, USB",
@@ -89,7 +89,7 @@ export const printers: Printer[] = [
     price: "R266 197",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "330 x 240 x 300 mm",
+      printDimensions: "330 x 240 x 300 mm",
       resolution: "20 - 600 micron (layer height)",
       materials: "PLA, ABS, Nylon, TPU 95A, PVA, PP, CPE, CPE+, PC, Breakaway, Composite materials",
       connectivity: "Wi-Fi (2.4GHz/5GHz), Ethernet, USB",
@@ -118,7 +118,7 @@ export const printers: Printer[] = [
     price: "R149 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "330 x 240 x 300 mm",
+      printDimensions: "330 x 240 x 300 mm",
       resolution: "20 - 600 micron (layer height)",
       materials: "PLA, ABS, Nylon, TPU 95A, PVA, PP, CPE, Breakaway",
       connectivity: "Wi-Fi (2.4GHz/5GHz), Ethernet, USB",
@@ -146,7 +146,7 @@ export const printers: Printer[] = [
     price: "R219 999",
     images: [`/concept/hero.svg`],
     specs: {
-      Layerforge: "330 x 240 x 300 mm",
+      printDimensions: "330 x 240 x 300 mm",
       resolution: "6.9 - 600 micron (ultra-fine to draft)",
       materials: "PLA, ABS, Nylon, TPU 95A, PVA, PP, PC, CPE+, Composites",
       connectivity: "Wi-Fi (2.4GHz/5GHz), Ethernet, USB",
@@ -175,7 +175,7 @@ export const printers: Printer[] = [
     price: "R302 998",
     images: [`/concept/hero.svg`],
     specs: {
-      Layerforge: "330 x 240 x 300 mm",
+      printDimensions: "330 x 240 x 300 mm",
       resolution: "6.9 - 600 micron (ultra-fine to draft)",
       materials: "PLA, ABS, Nylon, TPU 95A, PVA, PP, PC, CPE+, Composites, Engineering grades",
       connectivity: "Wi-Fi (2.4GHz/5GHz), Ethernet, USB",
@@ -204,7 +204,7 @@ export const printers: Printer[] = [
     price: "R249 000",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "330 x 240 x 300 mm",
+      printDimensions: "330 x 240 x 300 mm",
       resolution: "6.9 - 600 micron (ultra-fine to draft)",
       materials: "PLA, ABS, Nylon, TPU 95A, PVA, PP, PC, CPE+, Composites",
       connectivity: "Wi-Fi (2.4GHz/5GHz), Ethernet, USB",
@@ -233,7 +233,7 @@ export const printers: Printer[] = [
     price: "R499 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "330 x 240 x 300 mm",
+      printDimensions: "330 x 240 x 300 mm",
       resolution: "50 - 600 micron (layer height)",
       materials: "PEEK, PEKK, ULTEM 9085, PEI, Carbon Fiber Nylon, Glass Fiber Nylon",
       connectivity: "Wi-Fi (2.4GHz/5GHz), Ethernet, USB",
@@ -262,7 +262,7 @@ export const printers: Printer[] = [
     price: "R539 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "330 x 240 x 300 mm",
+      printDimensions: "330 x 240 x 300 mm",
       resolution: "50 - 600 micron (layer height)",
       materials: "PEEK, PEKK, ULTEM 9085, PEI, Carbon Fiber Nylon, Glass Fiber Nylon",
       connectivity: "Wi-Fi (2.4GHz/5GHz), Ethernet, USB",
@@ -291,7 +291,7 @@ export const printers: Printer[] = [
     price: "R13 070",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "Fits S5/S7 build plates (330 x 240 mm)",
+      printDimensions: "Fits S5/S7 build plates (330 x 240 mm)",
       materials: "PVA water-soluble support material",
       connectivity: "Standalone operation",
     },
@@ -317,7 +317,7 @@ export const printers: Printer[] = [
     price: "R91 743",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "200 x 125 x 210 mm (5.2L)",
+      printDimensions: "200 x 125 x 210 mm (5.2L)",
       resolution: "25 micron XY, 25-300 micron Z (layer height)",
       materials: "Standard, Tough, Durable, Flexible, High Temp, Castable, Engineering resins",
       connectivity: "Wi-Fi (2.4GHz/5GHz), Ethernet, USB",
@@ -344,7 +344,7 @@ export const printers: Printer[] = [
     price: "R135 913",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "200 x 125 x 210 mm (5.2L)",
+      printDimensions: "200 x 125 x 210 mm (5.2L)",
       resolution: "25 micron XY, 25-300 micron Z (layer height)",
       materials: "Dental LT Clear, Surgical Guide, IBT Flex, Dental Model, Biocompatible resins",
       connectivity: "Wi-Fi (2.4GHz/5GHz), Ethernet, USB",
@@ -367,18 +367,18 @@ export const printers: Printer[] = [
     name: "Form 4L",
     brand: "Formlabs",
     slug: "formlabs-form-4l",
-    description: "The Form 4L brings large-format MSLA printing to professional environments with a 335 x 200 x 300 mm Layerforge—over 5x larger than the Form 4. Ideal for prototyping large parts, batch production, and manufacturing aids, it delivers the same exceptional accuracy and speed as the Form 4 at a significantly larger scale.",
+    description: "The Form 4L brings large-format MSLA printing to professional environments with a 335 x 200 x 300 mm print dimensions—over 5x larger than the Form 4. Ideal for prototyping large parts, batch production, and manufacturing aids, it delivers the same exceptional accuracy and speed as the Form 4 at a significantly larger scale.",
     price: "R257 290",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "335 x 200 x 300 mm (20.1L)",
+      printDimensions: "335 x 200 x 300 mm (20.1L)",
       resolution: "25 micron XY, 25-300 micron Z (layer height)",
       materials: "Standard, Tough, Durable, Flexible, High Temp, Engineering resins",
       connectivity: "Wi-Fi (2.4GHz/5GHz), Ethernet, USB",
       printSpeed: "Fast large-format printing",
     },
     features: [
-      "5x larger Layerforge than Form 4",
+      "5x larger print dimensions than Form 4",
       "Low Force Display (LFD) technology",
       "Large-scale prototyping",
       "Batch production capability",
@@ -398,7 +398,7 @@ export const printers: Printer[] = [
     price: "R108 366",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "145 x 145 x 185 mm (3.9L)",
+      printDimensions: "145 x 145 x 185 mm (3.9L)",
       resolution: "25 micron XY, 25-300 micron Z",
       materials: "Dental LT Clear, Surgical Guide, Dental Model, IBT Flex, Biocompatible resins",
       connectivity: "Wi-Fi (2.4GHz/5GHz), Ethernet, USB",
@@ -424,7 +424,7 @@ export const printers: Printer[] = [
     price: "R88 695",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "Compatible with Form 3+/3B+ build platforms",
+      printDimensions: "Compatible with Form 3+/3B+ build platforms",
       connectivity: "Integrated with printer Wi-Fi/Ethernet",
     },
     features: [
@@ -448,7 +448,7 @@ export const printers: Printer[] = [
     price: "R16 959",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "Fits Form 3/3+/3B+ build platforms",
+      printDimensions: "Fits Form 3/3+/3B+ build platforms",
       materials: "IPA (isopropyl alcohol) solvent",
       connectivity: "Standalone operation",
     },
@@ -472,7 +472,7 @@ export const printers: Printer[] = [
     price: "R99 000",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "Fits Form 3L/4L build platforms (335 x 200 mm)",
+      printDimensions: "Fits Form 3L/4L build platforms (335 x 200 mm)",
       materials: "IPA (isopropyl alcohol) - 36L capacity",
       connectivity: "Standalone operation",
     },
@@ -496,7 +496,7 @@ export const printers: Printer[] = [
     price: "R108 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "Fits Form 3L/4L build platforms (335 x 200 x 300 mm)",
+      printDimensions: "Fits Form 3L/4L build platforms (335 x 200 x 300 mm)",
       materials: "All Formlabs resins",
       connectivity: "Standalone operation",
       nozzleTemp: "Temperature control up to 80°C",
@@ -521,7 +521,7 @@ export const printers: Printer[] = [
     price: "R17 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "Fits Form 3/3+/3B+/4 build platforms",
+      printDimensions: "Fits Form 3/3+/3B+/4 build platforms",
       materials: "IPA (isopropyl alcohol) solvent",
       connectivity: "Standalone operation",
     },
@@ -545,7 +545,7 @@ export const printers: Printer[] = [
     price: "From R727 000",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "165 x 165 x 300 mm (8.1L)",
+      printDimensions: "165 x 165 x 300 mm (8.1L)",
       resolution: "110 micron (layer height)",
       materials: "Nylon 12, Nylon 11, Nylon 12 GF, Nylon 11 CF, TPU 90A",
       connectivity: "Wi-Fi (2.4GHz/5GHz), Ethernet",
@@ -574,7 +574,7 @@ export const printers: Printer[] = [
     price: "R6 295",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "180 x 180 x 180 mm",
+      printDimensions: "180 x 180 x 180 mm",
       resolution: "50 - 500 micron (layer height)",
       materials: "PLA, PETG, TPU, PVA, PLA-CF",
       connectivity: "Wi-Fi (2.4GHz)",
@@ -603,7 +603,7 @@ export const printers: Printer[] = [
     price: "R10 899",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "180 x 180 x 180 mm",
+      printDimensions: "180 x 180 x 180 mm",
       resolution: "50 - 500 micron (layer height)",
       materials: "PLA, PETG, TPU, PVA, PLA-CF (4 colors simultaneously)",
       connectivity: "Wi-Fi (2.4GHz)",
@@ -628,11 +628,11 @@ export const printers: Printer[] = [
     name: "A1",
     brand: "Bambu Lab",
     slug: "bambu-lab-a1",
-    description: "The Bambu Lab A1 is a full-size bedslinger printer offering a generous 256 x 256 x 256 mm Layerforge with the same exceptional quality and ease-of-use as the A1 Mini. Featuring automatic calibration, vibration compensation, and flow calibration, it delivers consistent, high-quality prints for larger projects. The open design provides easy access while maintaining excellent print quality.",
+    description: "The Bambu Lab A1 is a full-size bedslinger printer offering a generous 256 x 256 x 256 mm print dimensions with the same exceptional quality and ease-of-use as the A1 Mini. Featuring automatic calibration, vibration compensation, and flow calibration, it delivers consistent, high-quality prints for larger projects. The open design provides easy access while maintaining excellent print quality.",
     price: "R9 299",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "256 x 256 x 256 mm",
+      printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
       materials: "PLA, PETG, TPU, PVA, PLA-CF",
       connectivity: "Wi-Fi (2.4GHz)",
@@ -641,7 +641,7 @@ export const printers: Printer[] = [
       bedTemp: "Up to 100°C (textured PEI plate)",
     },
     features: [
-      "Large 256mm³ Layerforge",
+      "Large 256mm³ print dimensions",
       "Fully automatic calibration",
       "Vibration compensation (input shaping)",
       "Flow rate calibration",
@@ -657,11 +657,11 @@ export const printers: Printer[] = [
     name: "A1 Combo",
     brand: "Bambu Lab",
     slug: "bambu-lab-a1-combo",
-    description: "The A1 Combo combines the full-size A1 printer with the AMS Lite system for large-format multi-color printing. With a 256 x 256 x 256 mm Layerforge and 4-color capability, it's ideal for creating impressive multi-color models, functional prototypes, and creative projects at scale. RFID filament recognition ensures optimal settings for every material.",
+    description: "The A1 Combo combines the full-size A1 printer with the AMS Lite system for large-format multi-color printing. With a 256 x 256 x 256 mm print dimensions and 4-color capability, it's ideal for creating impressive multi-color models, functional prototypes, and creative projects at scale. RFID filament recognition ensures optimal settings for every material.",
     price: "R13 499",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "256 x 256 x 256 mm",
+      printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
       materials: "PLA, PETG, TPU, PVA, PLA-CF (4 colors simultaneously)",
       connectivity: "Wi-Fi (2.4GHz)",
@@ -671,7 +671,7 @@ export const printers: Printer[] = [
     },
     features: [
       "AMS Lite included (4-spool capacity)",
-      "Large 256mm³ Layerforge",
+      "Large 256mm³ print dimensions",
       "4-color/multi-material printing",
       "RFID filament recognition",
       "Fully automatic calibration",
@@ -690,7 +690,7 @@ export const printers: Printer[] = [
     price: "R14 499",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "256 x 256 x 256 mm",
+      printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
       materials: "PLA, PETG, TPU, PLA-CF, PETG-CF",
       connectivity: "Wi-Fi (2.4GHz/5GHz), LAN",
@@ -719,7 +719,7 @@ export const printers: Printer[] = [
     price: "R14 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "256 x 256 x 256 mm",
+      printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
       materials: "PLA, PETG, TPU, PVA, ABS, ASA, PA, PC, PET-CF, PA-CF",
       connectivity: "Wi-Fi (2.4GHz/5GHz), LAN",
@@ -748,7 +748,7 @@ export const printers: Printer[] = [
     price: "R21 995",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "256 x 256 x 256 mm",
+      printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
       materials: "PLA, PETG, TPU, PVA, ABS, ASA, PA, PC (4 colors simultaneously)",
       connectivity: "Wi-Fi (2.4GHz/5GHz), LAN",
@@ -777,7 +777,7 @@ export const printers: Printer[] = [
     price: "R23 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "256 x 256 x 256 mm",
+      printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
       materials: "PLA, PETG, TPU, PVA, ABS, ASA, PA, PC (4 colors simultaneously)",
       connectivity: "Wi-Fi (2.4GHz/5GHz), LAN",
@@ -806,7 +806,7 @@ export const printers: Printer[] = [
     price: "R17 695",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "256 x 256 x 256 mm",
+      printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron",
       materials: "PLA, PETG, ABS, ASA, PA, PC",
       connectivity: "Wi-Fi (2.4G & 5G)",
@@ -831,7 +831,7 @@ export const printers: Printer[] = [
     price: "R25 445",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "256 x 256 x 256 mm",
+      printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
       materials: "PLA, PETG, TPU, PVA, ABS, ASA, PA, PC (4 colors simultaneously)",
       connectivity: "Wi-Fi (2.4GHz/5GHz), LAN",
@@ -860,7 +860,7 @@ export const printers: Printer[] = [
     price: "R32 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "256 x 256 x 256 mm",
+      printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
       materials: "PLA, PETG, TPU, PVA, ABS, ASA, PA, PC, PA-CF, PET-CF",
       connectivity: "Wi-Fi (2.4GHz/5GHz), LAN",
@@ -889,7 +889,7 @@ export const printers: Printer[] = [
     price: "R39 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "256 x 256 x 256 mm",
+      printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
       materials: "PLA, PETG, TPU, PVA, ABS, ASA, PA, PC, PA-CF, PET-CF (4 colors simultaneously)",
       connectivity: "Wi-Fi (2.4GHz/5GHz), LAN",
@@ -918,7 +918,7 @@ export const printers: Printer[] = [
     price: "R44 707",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "256 x 256 x 256 mm",
+      printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
       materials: "PLA, PETG, TPU, PVA, ABS, ASA, PA, PC, PA-CF, PET-CF (4 colors simultaneously)",
       connectivity: "Wi-Fi (2.4GHz/5GHz), LAN",
@@ -947,7 +947,7 @@ export const printers: Printer[] = [
     price: "R65 995",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "256 x 256 x 256 mm",
+      printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
       materials: "PA-CF, PAHT-CF, PPS-CF, PPA-CF, PET-CF, engineering-grade composites",
       connectivity: "Wi-Fi (2.4GHz/5GHz), LAN, Offline/Air-gapped mode",
@@ -976,7 +976,7 @@ export const printers: Printer[] = [
     price: "R45 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "325 x 320 x 325 mm",
+      printDimensions: "325 x 320 x 325 mm",
       materials: "PLA, PETG, TPU, PVA, BVOH, ABS, ASA, PC, PA, PET, PPS (and fiber-reinforced variants)",
       connectivity: "Wi-Fi, LAN",
       nozzleTemp: "Max nozzle temperature: 350°C",
@@ -998,7 +998,7 @@ export const printers: Printer[] = [
     price: "R52 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "Large format hybrid",
+      printDimensions: "Large format hybrid",
       materials: "Multiple material types",
       connectivity: "Wi-Fi, LAN",
     },
@@ -1013,7 +1013,7 @@ export const printers: Printer[] = [
     price: "R53 499",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "325 x 320 x 325 mm",
+      printDimensions: "325 x 320 x 325 mm",
       resolution: "50 - 500 micron",
       materials: "PLA, PETG, TPU, PVA, BVOH, ABS, ASA, PC, PA, PET, PPS (and fiber-reinforced variants)",
       connectivity: "Wi-Fi, LAN",
@@ -1035,7 +1035,7 @@ export const printers: Printer[] = [
     price: "R62 865",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "Large format hybrid",
+      printDimensions: "Large format hybrid",
       materials: "Multiple material types",
       connectivity: "Wi-Fi, LAN",
     },
@@ -1050,7 +1050,7 @@ export const printers: Printer[] = [
     price: "R74 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "Large format hybrid",
+      printDimensions: "Large format hybrid",
       materials: "Multiple material types",
       connectivity: "Wi-Fi, LAN",
     },
@@ -1065,7 +1065,7 @@ export const printers: Printer[] = [
     price: "R94 098",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "Large format hybrid",
+      printDimensions: "Large format hybrid",
       materials: "Multiple material types",
       connectivity: "Wi-Fi, LAN",
     },
@@ -1082,7 +1082,7 @@ export const printers: Printer[] = [
     price: "R11 699",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "220 x 220 x 250 mm",
+      printDimensions: "220 x 220 x 250 mm",
       resolution: "50 - 500 micron",
       materials: "PLA, PETG, ABS, ASA, TPU",
       connectivity: "Wi-Fi, LAN",
@@ -1101,7 +1101,7 @@ export const printers: Printer[] = [
     price: "R14 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "300 x 300 x 300 mm",
+      printDimensions: "300 x 300 x 300 mm",
       resolution: "50 - 500 micron",
       materials: "PLA, PETG, ABS, ASA, TPU",
       connectivity: "Wi-Fi, LAN",
@@ -1120,7 +1120,7 @@ export const printers: Printer[] = [
     price: "R12 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "220 x 220 x 250 mm",
+      printDimensions: "220 x 220 x 250 mm",
       resolution: "50 - 500 micron",
       materials: "PLA, PETG, ABS, ASA, Carbon Fiber, TPU",
       connectivity: "Wi-Fi, LAN",
@@ -1138,7 +1138,7 @@ export const printers: Printer[] = [
     price: "R10 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "220 x 220 x 250 mm",
+      printDimensions: "220 x 220 x 250 mm",
       resolution: "50 - 500 micron",
       materials: "PLA, PETG, ABS, TPU",
       connectivity: "Wi-Fi, LAN",
@@ -1156,7 +1156,7 @@ export const printers: Printer[] = [
     price: "R24 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "350 x 350 x 350 mm",
+      printDimensions: "350 x 350 x 350 mm",
       resolution: "50 - 500 micron",
       materials: "PLA, PETG, ABS, ASA, PA, PC",
       connectivity: "Wi-Fi, LAN",
@@ -1175,7 +1175,7 @@ export const printers: Printer[] = [
     price: "R33 599",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "350 x 350 x 350 mm",
+      printDimensions: "350 x 350 x 350 mm",
       resolution: "50 - 500 micron",
       materials: "PLA, PETG, ABS, ASA, PA, PC",
       connectivity: "Wi-Fi, LAN",
@@ -1194,7 +1194,7 @@ export const printers: Printer[] = [
     price: "R29 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "300 x 300 x 300 mm",
+      printDimensions: "300 x 300 x 300 mm",
       resolution: "50 - 500 micron",
       materials: "PLA, PETG, ABS, ASA, PA, PC",
       connectivity: "Wi-Fi, LAN",
@@ -1213,7 +1213,7 @@ export const printers: Printer[] = [
     price: "R8 189",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "250 x 250 x 300 mm",
+      printDimensions: "250 x 250 x 300 mm",
       resolution: "50 - 400 micron",
       materials: "PLA, PETG, ABS, TPU",
       connectivity: "Wi-Fi, USB",
@@ -1232,7 +1232,7 @@ export const printers: Printer[] = [
     price: "R6 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "220 x 220 x 250 mm",
+      printDimensions: "220 x 220 x 250 mm",
       resolution: "50 - 400 micron",
       materials: "PLA, PETG, ABS, TPU",
       connectivity: "Wi-Fi, USB",
@@ -1246,54 +1246,54 @@ export const printers: Printer[] = [
     name: "Creality Ender 3 V3 Plus",
     brand: "Creality",
     slug: "creality-ender-3-v3-plus",
-    description: "Larger Ender 3 V3 with expanded Layerforge.",
+    description: "Larger Ender 3 V3 with expanded print dimensions.",
     price: "R8 499",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "300 x 300 x 330 mm",
+      printDimensions: "300 x 300 x 330 mm",
       resolution: "50 - 400 micron",
       materials: "PLA, PETG, ABS, TPU",
       connectivity: "Wi-Fi, USB",
       printSpeed: "Up to 500 mm/s",
       nozzleTemp: "Up to 260°C",
     },
-    features: ["Larger Layerforge", "Klipper firmware", "Input shaping", "Auto leveling"],
+    features: ["Larger print dimensions", "Klipper firmware", "Input shaping", "Auto leveling"],
   },
   {
     id: "creality-ender-3-s1-plus",
     name: "Creality Ender 3 S1 Plus",
     brand: "Creality",
     slug: "creality-ender-3-s1-plus",
-    description: "Enhanced Ender 3 S1 with larger Layerforge and improved features.",
+    description: "Enhanced Ender 3 S1 with larger print dimensions and improved features.",
     price: "R7 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "300 x 300 x 300 mm",
+      printDimensions: "300 x 300 x 300 mm",
       resolution: "50 - 400 micron",
       materials: "PLA, PETG, ABS, TPU",
       connectivity: "Wi-Fi, USB",
       printSpeed: "Up to 150 mm/s",
       nozzleTemp: "Up to 260°C",
     },
-    features: ["Larger Layerforge", "Direct drive", "CR Touch leveling", "Sprite extruder"],
+    features: ["Larger print dimensions", "Direct drive", "CR Touch leveling", "Sprite extruder"],
   },
   {
     id: "creality-ender-5-max",
     name: "Creality Ender 5 Max",
     brand: "Creality",
     slug: "creality-ender-5-max",
-    description: "Large-format Ender 5 with massive Layerforge.",
+    description: "Large-format Ender 5 with massive print dimensions.",
     price: "R12 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "400 x 400 x 400 mm",
+      printDimensions: "400 x 400 x 400 mm",
       resolution: "50 - 400 micron",
       materials: "PLA, PETG, ABS, TPU",
       connectivity: "USB, SD Card",
       printSpeed: "Up to 180 mm/s",
       nozzleTemp: "Up to 260°C",
     },
-    features: ["Massive Layerforge", "Stable cube frame", "Dual Y-axis", "BL Touch compatible"],
+    features: ["Massive print dimensions", "Stable cube frame", "Dual Y-axis", "BL Touch compatible"],
   },
   {
     id: "creality-hi-combo",
@@ -1304,7 +1304,7 @@ export const printers: Printer[] = [
     price: "R15 999",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "220 x 220 x 250 mm",
+      printDimensions: "220 x 220 x 250 mm",
       resolution: "50 - 500 micron",
       materials: "PLA, PETG, ABS, ASA, TPU",
       connectivity: "Wi-Fi, LAN",
@@ -1323,7 +1323,7 @@ export const printers: Printer[] = [
     price: "Enquire for pricing",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "300 x 200 x 200 mm",
+      printDimensions: "300 x 200 x 200 mm",
       materials: "17-4 PH, 316L, H13, Copper",
       connectivity: "Ethernet",
     },
@@ -1338,7 +1338,7 @@ export const printers: Printer[] = [
     price: "Enquire for pricing",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "350 x 220 x 50 mm",
+      printDimensions: "350 x 220 x 50 mm",
       materials: "17-4 PH, 316L, 4140, Copper",
       connectivity: "Ethernet",
     },
@@ -1353,7 +1353,7 @@ export const printers: Printer[] = [
     price: "Enquire for pricing",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "200 x 100 x 50 mm",
+      printDimensions: "200 x 100 x 50 mm",
       materials: "17-4 PH, 316L, 4140",
       connectivity: "Ethernet",
     },
@@ -1368,7 +1368,7 @@ export const printers: Printer[] = [
     price: "Enquire for pricing",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "490 x 380 x 260 mm",
+      printDimensions: "490 x 380 x 260 mm",
       materials: "17-4 PH, 316L, 4140, Copper",
       connectivity: "Ethernet",
     },
@@ -1385,7 +1385,7 @@ export const printers: Printer[] = [
     price: "R179 659",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "260 x 260 x 260 mm",
+      printDimensions: "260 x 260 x 260 mm",
       materials: "PEEK, ULTEM, PPSU, PC, PA",
       connectivity: "Ethernet, USB",
       nozzleTemp: "Up to 450°C",
@@ -1402,7 +1402,7 @@ export const printers: Printer[] = [
     price: "P.O.R",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "305 x 305 x 406 mm",
+      printDimensions: "305 x 305 x 406 mm",
       materials: "PEEK, ULTEM, PPSU, PC, PA, Carbon Fiber",
       connectivity: "Ethernet, USB",
       nozzleTemp: "Up to 500°C",
@@ -1419,7 +1419,7 @@ export const printers: Printer[] = [
     price: "P.O.R",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "610 x 508 x 508 mm",
+      printDimensions: "610 x 508 x 508 mm",
       materials: "PEEK, ULTEM, PPSU, PC, PA, Carbon Fiber",
       connectivity: "Ethernet, USB",
       nozzleTemp: "Up to 500°C",
@@ -1438,7 +1438,7 @@ export const printers: Printer[] = [
     price: "P.O.R",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "1005 x 1005 x 1005 mm",
+      printDimensions: "1005 x 1005 x 1005 mm",
       materials: "PLA, PETG, ASA, PA, TPU",
       connectivity: "Ethernet",
       printSpeed: "Up to 600 mm/s",
@@ -1454,7 +1454,7 @@ export const printers: Printer[] = [
     price: "P.O.R",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "1005 x 1005 x 1005 mm",
+      printDimensions: "1005 x 1005 x 1005 mm",
       materials: "Engineering-grade materials, composites",
       connectivity: "Ethernet",
       printSpeed: "Up to 600 mm/s",
@@ -1470,7 +1470,7 @@ export const printers: Printer[] = [
     price: "P.O.R",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "500 x 1000 x 500 mm",
+      printDimensions: "500 x 1000 x 500 mm",
       materials: "PLA, PETG, ASA, PA, TPU",
       connectivity: "Ethernet",
     },
@@ -1487,12 +1487,12 @@ export const printers: Printer[] = [
     price: "Contact for pricing",
     images: [`/concept/detail.svg`],
     specs: {
-      Layerforge: "800 x 800 x 1000 mm",
+      printDimensions: "800 x 800 x 1000 mm",
       materials: "PLA, PETG, ABS, ASA, TPU",
       connectivity: "Wi-Fi, Ethernet",
       printSpeed: "Up to 300 mm/s",
     },
-    features: ["Massive Layerforge", "Industrial scale", "Enclosed chamber", "Multi-zone heating"],
+    features: ["Massive print dimensions", "Industrial scale", "Enclosed chamber", "Multi-zone heating"],
   },
 ];
 

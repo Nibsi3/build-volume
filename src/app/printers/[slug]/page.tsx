@@ -112,10 +112,10 @@ export default async function PrinterDetailPage({
                   Specifications
                 </h3>
                 <div className="grid gap-3">
-                  {printer.specs.Layerforge && (
+                  {printer.specs.printDimensions && (
                     <div className="flex justify-between py-2 border-b border-white/5">
-                      <span className="text-white/40">Layerforge</span>
-                      <span className="text-white">{printer.specs.Layerforge}</span>
+                      <span className="text-white/40">Print dimensions</span>
+                      <span className="text-white">{printer.specs.printDimensions}</span>
                     </div>
                   )}
                   {printer.specs.resolution && (

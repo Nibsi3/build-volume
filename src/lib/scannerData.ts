@@ -28,7 +28,7 @@ export const scanners: Scanner[] = [
     description: "The EinStar is a cost-effective handheld 3D scanner utilizing infrared VCSEL structured light technology. Perfect for hobbyists, educators, and professionals seeking an accessible entry into 3D scanning. It supports full-color texture capture, outdoor scanning, and multiple alignment modes for capturing medium to large objects with ease.",
     price: "R24 999",
     images: [
-      "/concept/detail.svg",
+      "/products/scanners/einstar-1.jpg",
     ],
     specs: {
       accuracy: "Up to 0.1 mm",
@@ -58,7 +58,7 @@ export const scanners: Scanner[] = [
     description: "The EinScan Pro HD is a professional-grade handheld 3D scanner delivering industrial-level accuracy of 0.04mm. Designed for reverse engineering, quality inspection, and product development, it features multiple scanning modes and optional add-ons including a turntable and color pack for comprehensive scanning solutions.",
     price: "R89 999",
     images: [
-      "/concept/detail.svg",
+      "/products/scanners/einscan-pro-hd-1.jpg",
     ],
     specs: {
       accuracy: "Up to 0.04 mm",
@@ -89,7 +89,7 @@ export const scanners: Scanner[] = [
     description: "The EinScan HX is a hybrid 3D scanner combining blue laser and LED structured light sources for versatile scanning of different materials and surfaces. The dual light source technology enables scanning of challenging surfaces including dark, reflective, and multi-material objects without spray, making it ideal for industrial applications.",
     price: "R149 999",
     images: [
-      "/concept/detail.svg",
+      "/products/scanners/einscan-hx-1.jpg",
     ],
     specs: {
       accuracy: "Up to 0.04 mm (laser) / 0.05 mm (LED)",
@@ -119,7 +119,7 @@ export const scanners: Scanner[] = [
     description: "The EinScan HX2 is the next-generation hybrid scanner with enhanced 0.03mm accuracy and faster 30 FPS scanning speeds. Building on the HX platform, it delivers improved performance for demanding professional applications including automotive, aerospace, and manufacturing quality control.",
     price: "R189 999",
     images: [
-      "/concept/detail.svg",
+      "/products/scanners/einscan-hx2-1.jpg",
     ],
     specs: {
       accuracy: "Up to 0.03 mm (laser) / 0.04 mm (LED)",
@@ -149,7 +149,7 @@ export const scanners: Scanner[] = [
     description: "The EinScan H2 is a handheld 3D scanner featuring infrared VCSEL structured light technology, making it safe and comfortable for scanning people. With excellent accuracy and a large scan area, it's ideal for body scanning, healthcare applications, custom orthotics, and capturing large objects.",
     price: "R69 999",
     images: [
-      "/concept/detail.svg",
+      "/products/scanners/einscan-h2-1.jpg",
     ],
     specs: {
       accuracy: "Up to 0.05 mm",
@@ -180,7 +180,7 @@ export const scanners: Scanner[] = [
     description: "The EinScan H is a portable handheld 3D scanner optimized for scanning human bodies and large objects with high efficiency. Using safe infrared and LED hybrid lighting, it captures detailed full-body scans quickly and comfortably, making it perfect for custom apparel, fitness tracking, and VR/gaming avatar creation.",
     price: "R54 999",
     images: [
-      "/concept/detail.svg",
+      "/products/scanners/einscan-h-1.jpg",
     ],
     specs: {
       accuracy: "Up to 0.05 mm",
@@ -211,7 +211,7 @@ export const scanners: Scanner[] = [
     description: "The EinScan Libre is a lightweight wireless 3D scanner offering ultimate portability and freedom of movement. With no cables to restrict your scanning, it's perfect for on-site scanning, field work, and situations where mobility is essential. The compact design and long battery life make it ideal for professionals on the go.",
     price: "R44 999",
     images: [
-      "/concept/detail.svg",
+      "/products/scanners/einscan-libre-1.jpg",
     ],
     specs: {
       accuracy: "Up to 0.1 mm",
@@ -241,7 +241,7 @@ export const scanners: Scanner[] = [
     description: "The EinScan Rigil is an industrial-grade 3D scanner delivering exceptional 0.02mm accuracy for high-precision metrology and quality control applications. With blue laser technology and a large scan area, it's designed for manufacturing environments requiring traceable, repeatable measurements for inspection and reverse engineering.",
     price: "R249 999",
     images: [
-      "/concept/detail.svg",
+      "/products/scanners/einscan-rigil-1.jpg",
     ],
     specs: {
       accuracy: "Up to 0.02 mm (volumetric)",
@@ -271,7 +271,7 @@ export const scanners: Scanner[] = [
     description: "The FreeScan Combo+ is a professional metrology-grade 3D scanner delivering exceptional 0.02mm accuracy for the most demanding industrial applications. With its large scan area, high-speed data acquisition, and blue laser technology, it's the choice for aerospace, automotive, and precision manufacturing quality control.",
     price: "R349 999",
     images: [
-      "/concept/detail.svg",
+      "/products/scanners/freescan-combo-1.jpg",
     ],
     specs: {
       accuracy: "Up to 0.02 mm (volumetric)",
@@ -303,7 +303,7 @@ export const scanners: Scanner[] = [
     description: "The CR-Scan Otter is a compact and affordable 3D scanner perfect for hobbyists, makers, and small object scanning. With its user-friendly design and Creality Scan software, it makes 3D scanning accessible to beginners while delivering quality results for 3D printing, game asset creation, and digital archiving.",
     price: "R7 999",
     images: [
-      "/concept/detail.svg",
+      "/products/scanners/cr-scan-otter-1.jpg",
     ],
     specs: {
       accuracy: "Up to 0.1 mm",
@@ -333,7 +333,7 @@ export const scanners: Scanner[] = [
     description: "The CR-Scan Raptor is a high-speed 3D scanner delivering excellent 0.05mm accuracy for both hobbyist and professional applications. With faster scanning speeds and a larger capture area than entry-level models, it bridges the gap between consumer and professional scanning for reverse engineering, product design, and content creation.",
     price: "R14 999",
     images: [
-      "/concept/detail.svg",
+      "/products/scanners/cr-scan-raptor-1.jpg",
     ],
     specs: {
       accuracy: "Up to 0.05 mm",
@@ -364,7 +364,7 @@ export const scanners: Scanner[] = [
     description: "The Creality RaptorX is an advanced 3D scanner featuring blue light technology for enhanced accuracy and performance. With 0.04mm precision and faster scanning speeds, it's designed for professional applications including industrial design, quality inspection, and medical/dental workflows requiring higher fidelity scans.",
     price: "R24 999",
     images: [
-      "/concept/detail.svg",
+      "/products/scanners/creality-raptorx-1.jpg",
     ],
     specs: {
       accuracy: "Up to 0.04 mm",

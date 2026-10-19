@@ -6,37 +6,37 @@ const categories = [
     name: "Ultimaker Spares",
     description: "Illustrative replacement parts for Ultimaker 3D printers.",
     href: "/shop?category=spares&brand=ultimaker",
-    image: "/concept/detail.svg",
+    image: "/products/spares/spare-1.jpg",
   },
   {
     name: "Formlabs Spares",
     description: "Genuine parts and accessories for Formlabs printers.",
     href: "/shop?category=spares&brand=formlabs",
-    image: "/concept/detail.svg",
+    image: "/products/spares/spare-2.jpg",
   },
   {
     name: "Bambu Lab Spares",
     description: "Replacement components for Bambu Lab printers.",
     href: "/shop?category=spares&brand=bambu-lab",
-    image: "/concept/detail.svg",
+    image: "/products/spares/spare-1.jpg",
   },
   {
     name: "Creality Spares",
     description: "Parts and upgrades for Creality 3D printers.",
     href: "/shop?category=spares&brand=creality",
-    image: "/concept/detail.svg",
+    image: "/products/spares/spare-2.jpg",
   },
   {
     name: "Zortrax Spares",
     description: "Illustrative spare parts for Zortrax machines.",
     href: "/shop?category=spares&brand=zortrax",
-    image: "/concept/detail.svg",
+    image: "/products/spares/spare-1.jpg",
   },
   {
     name: "E3D Spares",
     description: "Hotends, nozzles, and components from E3D.",
     href: "/shop?category=spares&brand=e3d",
-    image: "/concept/detail.svg",
+    image: "/products/spares/spare-2.jpg",
   },
 ];
 

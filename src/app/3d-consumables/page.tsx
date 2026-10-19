@@ -7,28 +7,28 @@ const categories = [
     description: "PLA, ABS, PETG, Nylon, TPU, and specialty filaments from top brands.",
     href: "/shop?category=filaments",
     count: "200+ Products",
-    image: "/concept/detail.svg",
+    image: "/products/consumables/filament-1.jpg",
   },
   {
     name: "Resins",
     description: "Standard, engineering, and specialty resins for SLA/DLP printers.",
     href: "/shop?category=resins",
     count: "80+ Products",
-    image: "/concept/detail.svg",
+    image: "/products/consumables/filament-2.jpg",
   },
   {
     name: "SLS Powders",
     description: "Nylon and specialty powders for selective laser sintering.",
     href: "/shop?category=powders",
     count: "20+ Products",
-    image: "/concept/detail.svg",
+    image: "/products/consumables/filament-1.jpg",
   },
   {
     name: "Adhesives & Accessories",
     description: "Build plate adhesives, cleaning supplies, and finishing tools.",
     href: "/shop?category=accessories",
     count: "50+ Products",
-    image: "/concept/detail.svg",
+    image: "/products/consumables/filament-2.jpg",
   },
 ];
 

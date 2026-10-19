@@ -13,7 +13,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/concept/hero.svg"
+            src="/3d-printer-illuminated-futuristic-scene.jpg"
             alt="Layerforge"
             fill
             className="object-cover"
@@ -66,7 +66,7 @@ export default function Home() {
                   className="w-[80vw] max-w-[520px] h-auto opacity-95"
                 />
               </div>
-              
+
               {/* Tagline */}
               <p className="text-white/70 text-sm tracking-widest uppercase mb-6 drop-shadow-[0_2px_18px_rgba(0,0,0,0.6)]">
                 3D Printing • Scanning • Software • Support
@@ -107,7 +107,7 @@ export default function Home() {
             {/* Left - Image */}
             <div className="aspect-[4/3] bg-[#1a1a1a] rounded-sm overflow-hidden relative">
               <Image
-                src="/concept/detail.svg"
+                src="/pexels-papaz-30620861.png"
                 alt="Layerforge"
                 fill
                 className="object-cover"

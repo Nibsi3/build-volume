@@ -30,7 +30,7 @@ export const printers: Printer[] = [
     slug: "ultimaker-makerbot-sketch-sprint",
     description: "The MakerBot Sketch Sprint is a fast, reliable 3D printer purpose-built for education. Featuring an enclosed build chamber with HEPA filtration for safe classroom use, it delivers consistent results with minimal setup. Cloud-enabled classroom management allows teachers to monitor and control multiple printers remotely, making it ideal for STEM curricula and design thinking programs.",
     price: "R41 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Ultimaker-MakerBot-Sketch-Sprint.png`],
     specs: {
       printDimensions: "200 x 200 x 220 mm",
       resolution: "100 - 400 micron",
@@ -56,9 +56,9 @@ export const printers: Printer[] = [
     name: "Ultimaker S5",
     brand: "Ultimaker",
     slug: "ultimaker-s5",
-    description: "The Ultimaker S5 is a large-format dual extrusion 3D printer engineered for professional environments. With its generous 330 x 240 x 300 mm print dimensions, it handles complex multi-material prints with ease. The swappable print core system enables quick material changes, while active bed leveling ensures perfect first layers every time. Ideal for functional prototypes, manufacturing aids, and end-use parts.",
+    description: "The Ultimaker S5 is a large-format dual extrusion 3D printer engineered for professional environments. With its generous 330 x 240 x 300 mm Layerforge, it handles complex multi-material prints with ease. The swappable print core system enables quick material changes, while active bed leveling ensures perfect first layers every time. Ideal for functional prototypes, manufacturing aids, and end-use parts.",
     price: "R168 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Ultimaker-S5.png`],
     specs: {
       printDimensions: "330 x 240 x 300 mm",
       resolution: "20 - 600 micron (layer height)",
@@ -87,7 +87,7 @@ export const printers: Printer[] = [
     slug: "ultimaker-s5-pro-bundle",
     description: "The Ultimaker S5 Pro Bundle is the complete professional 3D printing solution, combining the S5 printer with the Material Station and Air Manager. The Material Station provides automated filament handling with humidity control for up to 6 spools, enabling unattended 24/7 production. The Air Manager creates a closed airflow system with an EPA filter for safe indoor operation with engineering materials.",
     price: "R266 197",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Ultimaker-S5-Pro-Bundle.png`],
     specs: {
       printDimensions: "330 x 240 x 300 mm",
       resolution: "20 - 600 micron (layer height)",
@@ -116,7 +116,7 @@ export const printers: Printer[] = [
     slug: "ultimaker-s6",
     description: "The Ultimaker S6 builds on the proven S-series platform with enhanced reliability features and improved print quality. Designed for professional environments requiring consistent, high-quality output, it features dual extrusion for complex geometries with soluble supports, active bed leveling for perfect adhesion, and the proven print core system for versatile material compatibility.",
     price: "R149 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Ultimaker-S6.png`],
     specs: {
       printDimensions: "330 x 240 x 300 mm",
       resolution: "20 - 600 micron (layer height)",
@@ -144,7 +144,7 @@ export const printers: Printer[] = [
     slug: "ultimaker-s7",
     description: "The Ultimaker S7 represents the next generation of professional desktop 3D printing. Featuring an integrated Air Manager for safe indoor operation, a flexible PEI-coated build plate for easy part removal, and enhanced auto bed leveling with 121-point probing. The higher temperature hot end (340°C) enables printing with advanced engineering materials including polycarbonate and high-performance composites.",
     price: "R219 999",
-    images: [`/concept/hero.svg`],
+    images: [`${IMG}/UltiMaker-S7_01-No-Background.png`],
     specs: {
       printDimensions: "330 x 240 x 300 mm",
       resolution: "6.9 - 600 micron (ultra-fine to draft)",
@@ -173,7 +173,7 @@ export const printers: Printer[] = [
     slug: "ultimaker-s7-pro-bundle",
     description: "The ultimate professional 3D printing ecosystem combining the Ultimaker S7 with Material Station and integrated Air Manager. This complete solution delivers unattended 24/7 production capability with automated material handling, humidity-controlled storage, and safe indoor operation. Perfect for design studios, engineering departments, and production environments requiring maximum uptime and material versatility.",
     price: "R302 998",
-    images: [`/concept/hero.svg`],
+    images: [`${IMG}/UltiMaker-S7-pro-bundle_01-No-background.png`],
     specs: {
       printDimensions: "330 x 240 x 300 mm",
       resolution: "6.9 - 600 micron (ultra-fine to draft)",
@@ -202,7 +202,7 @@ export const printers: Printer[] = [
     slug: "ultimaker-s8",
     description: "The Ultimaker S8 is the latest evolution of the S-series platform, delivering enhanced speed, reliability, and material capabilities for demanding professional applications. With improved motion systems enabling faster print speeds up to 350 mm/s, next-generation print cores, and advanced material compatibility, it sets a new standard for desktop professional 3D printing.",
     price: "R249 000",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Ultimaker-S8.png`],
     specs: {
       printDimensions: "330 x 240 x 300 mm",
       resolution: "6.9 - 600 micron (ultra-fine to draft)",
@@ -231,7 +231,7 @@ export const printers: Printer[] = [
     slug: "ultimaker-factor-4",
     description: "The UltiMaker Factor 4 is an industrial-grade FDM 3D printer engineered for high-performance engineering materials. With a heated chamber up to 70°C and hot end temperatures reaching 420°C, it processes demanding materials like PEEK, PEKK, ULTEM, and carbon fiber composites. Built for production environments with enterprise-grade security, traceability, and reliability.",
     price: "R499 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/UltiMaker-Factor-4.png`],
     specs: {
       printDimensions: "330 x 240 x 300 mm",
       resolution: "50 - 600 micron (layer height)",
@@ -260,7 +260,7 @@ export const printers: Printer[] = [
     slug: "ultimaker-factor-4-stand",
     description: "The complete UltiMaker Factor 4 package with dedicated professional stand for optimal workspace ergonomics. This industrial-grade solution provides everything needed for high-performance material processing in production environments. The stand offers stable operation, cable management, and convenient storage for accessories and materials.",
     price: "R539 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/UltiMaker-Factor-4-with-Stand.png`],
     specs: {
       printDimensions: "330 x 240 x 300 mm",
       resolution: "50 - 600 micron (layer height)",
@@ -289,7 +289,7 @@ export const printers: Printer[] = [
     slug: "ultimaker-pva-removal-station",
     description: "The Ultimaker PVA Removal Station automates the dissolution of water-soluble PVA support material, streamlining your post-processing workflow. With temperature-controlled water circulation and a basket system that fits S5/S7 build plates, it delivers consistent, hands-free support removal in hours rather than days.",
     price: "R13 070",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Ultimaker-PVA-Removal-Station.png`],
     specs: {
       printDimensions: "Fits S5/S7 build plates (330 x 240 mm)",
       materials: "PVA water-soluble support material",
@@ -315,7 +315,7 @@ export const printers: Printer[] = [
     slug: "formlabs-form-4",
     description: "The Form 4 is Formlabs' next-generation MSLA 3D printer, delivering up to 2x faster print speeds than previous generations while maintaining exceptional 25-micron accuracy. The Low Force Display (LFD) technology ensures gentle peel forces for reliable printing of intricate details. With an automated resin dispensing system and intuitive touchscreen interface, it's designed for professional workflows in engineering, design, and manufacturing.",
     price: "R91 743",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Form-4.png`],
     specs: {
       printDimensions: "200 x 125 x 210 mm (5.2L)",
       resolution: "25 micron XY, 25-300 micron Z (layer height)",
@@ -342,7 +342,7 @@ export const printers: Printer[] = [
     slug: "formlabs-form-4b",
     description: "The Form 4B is purpose-built for dental and medical applications, featuring the same blazing-fast MSLA technology as the Form 4 with validated biocompatible materials. Designed for dental labs, clinics, and medical device manufacturers, it produces surgical guides, dental models, splints, and custom medical devices with regulatory-compliant workflows.",
     price: "R135 913",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Form-4B.png`],
     specs: {
       printDimensions: "200 x 125 x 210 mm (5.2L)",
       resolution: "25 micron XY, 25-300 micron Z (layer height)",
@@ -367,9 +367,9 @@ export const printers: Printer[] = [
     name: "Form 4L",
     brand: "Formlabs",
     slug: "formlabs-form-4l",
-    description: "The Form 4L brings large-format MSLA printing to professional environments with a 335 x 200 x 300 mm print dimensions—over 5x larger than the Form 4. Ideal for prototyping large parts, batch production, and manufacturing aids, it delivers the same exceptional accuracy and speed as the Form 4 at a significantly larger scale.",
+    description: "The Form 4L brings large-format MSLA printing to professional environments with a 335 x 200 x 300 mm Layerforge—over 5x larger than the Form 4. Ideal for prototyping large parts, batch production, and manufacturing aids, it delivers the same exceptional accuracy and speed as the Form 4 at a significantly larger scale.",
     price: "R257 290",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Form-4L.png`],
     specs: {
       printDimensions: "335 x 200 x 300 mm (20.1L)",
       resolution: "25 micron XY, 25-300 micron Z (layer height)",
@@ -378,7 +378,7 @@ export const printers: Printer[] = [
       printSpeed: "Fast large-format printing",
     },
     features: [
-      "5x larger print dimensions than Form 4",
+      "5x larger Layerforge than Form 4",
       "Low Force Display (LFD) technology",
       "Large-scale prototyping",
       "Batch production capability",
@@ -396,7 +396,7 @@ export const printers: Printer[] = [
     slug: "formlabs-form-3b-plus",
     description: "The Form 3B+ is a professional-grade dental and medical 3D printer utilizing Low Force Stereolithography (LFS) technology. Optimized for biocompatible materials, it produces surgical guides, dental models, orthodontic appliances, and custom medical devices with exceptional accuracy and surface finish. Validated workflows ensure regulatory compliance for clinical applications.",
     price: "R108 366",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Form-3B+.png`],
     specs: {
       printDimensions: "145 x 145 x 185 mm (3.9L)",
       resolution: "25 micron XY, 25-300 micron Z",
@@ -422,7 +422,7 @@ export const printers: Printer[] = [
     slug: "formlabs-form-auto",
     description: "Form Auto transforms your Form 3+ or Form 3B+ into an automated production system capable of 24/7 unattended operation. The robotic arm automatically removes completed prints and queues the next job, dramatically increasing throughput without manual intervention. Integrated with Fleet Control for centralized management of multiple printers.",
     price: "R88 695",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Form-Auto.png`],
     specs: {
       printDimensions: "Compatible with Form 3+/3B+ build platforms",
       connectivity: "Integrated with printer Wi-Fi/Ethernet",
@@ -446,7 +446,7 @@ export const printers: Printer[] = [
     slug: "formlabs-form-wash",
     description: "Form Wash automates the critical washing step in resin 3D printing, delivering consistent, repeatable results every time. The agitation system thoroughly cleans parts in IPA (isopropyl alcohol), removing uncured resin from surfaces and internal channels. Programmable wash cycles and a magnetic drive ensure optimal cleaning without manual scrubbing.",
     price: "R16 959",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Form-Wash.png`],
     specs: {
       printDimensions: "Fits Form 3/3+/3B+ build platforms",
       materials: "IPA (isopropyl alcohol) solvent",
@@ -470,7 +470,7 @@ export const printers: Printer[] = [
     slug: "formlabs-form-wash-l",
     description: "Form Wash L is the large-format washing solution designed specifically for Form 3L and Form 4L prints. With a 36-liter solvent capacity, it handles the largest builds while maintaining the same consistent, automated washing quality as the standard Form Wash. Essential for large-format resin printing workflows.",
     price: "R99 000",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Form-Wash-L.png`],
     specs: {
       printDimensions: "Fits Form 3L/4L build platforms (335 x 200 mm)",
       materials: "IPA (isopropyl alcohol) - 36L capacity",
@@ -494,7 +494,7 @@ export const printers: Printer[] = [
     slug: "formlabs-form-cure-l",
     description: "Form Cure L provides uniform UV post-curing for large-format resin prints from the Form 3L and Form 4L. With 360° UV exposure and precise temperature control up to 80°C, it ensures optimal mechanical properties for engineering and production parts. Material-specific presets automate the curing process for consistent results.",
     price: "R108 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Form-Cure-L.png`],
     specs: {
       printDimensions: "Fits Form 3L/4L build platforms (335 x 200 x 300 mm)",
       materials: "All Formlabs resins",
@@ -519,7 +519,7 @@ export const printers: Printer[] = [
     slug: "formlabs-form-wash-gen2",
     description: "Form Wash Gen 2 is the second-generation automated washing station with improved efficiency and user experience. Featuring faster wash cycles, enhanced agitation, and a refined interface, it delivers cleaner parts with less solvent consumption. Compatible with Form 3, Form 3+, Form 3B+, and Form 4 printers.",
     price: "R17 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Form-Wash-Gen-2.png`],
     specs: {
       printDimensions: "Fits Form 3/3+/3B+/4 build platforms",
       materials: "IPA (isopropyl alcohol) solvent",
@@ -543,7 +543,7 @@ export const printers: Printer[] = [
     slug: "formlabs-fuse-1-plus",
     description: "The Fuse 1+ is Formlabs' industrial-grade Selective Laser Sintering (SLS) 3D printer, bringing production-quality nylon parts to the desktop. With self-supporting powder bed technology, it prints complex geometries without supports, enabling designs impossible with other technologies. The 30W laser delivers faster print speeds and improved surface finish for functional prototypes and end-use parts.",
     price: "From R727 000",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Fuse-1+.png`],
     specs: {
       printDimensions: "165 x 165 x 300 mm (8.1L)",
       resolution: "110 micron (layer height)",
@@ -572,7 +572,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-a1-mini",
     description: "The Bambu Lab A1 Mini is a compact, beginner-friendly 3D printer that delivers exceptional print quality without complexity. Featuring fully automatic calibration, vibration compensation, and flow calibration, it produces professional results right out of the box. The integrated camera enables AI-powered spaghetti detection and remote monitoring via the Bambu Handy app.",
     price: "R6 295",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/A1-Mini.png`],
     specs: {
       printDimensions: "180 x 180 x 180 mm",
       resolution: "50 - 500 micron (layer height)",
@@ -601,7 +601,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-a1-mini-combo",
     description: "The A1 Mini Combo bundles the compact A1 Mini printer with the AMS Lite multi-material system, enabling seamless 4-color printing. The AMS Lite features RFID filament recognition for automatic material profile loading, making multi-color prints as simple as single-color. Perfect for creative projects, educational settings, and hobbyists wanting vibrant multi-color capabilities.",
     price: "R10 899",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/A1-Mini-Combo.png`],
     specs: {
       printDimensions: "180 x 180 x 180 mm",
       resolution: "50 - 500 micron (layer height)",
@@ -628,9 +628,9 @@ export const printers: Printer[] = [
     name: "A1",
     brand: "Bambu Lab",
     slug: "bambu-lab-a1",
-    description: "The Bambu Lab A1 is a full-size bedslinger printer offering a generous 256 x 256 x 256 mm print dimensions with the same exceptional quality and ease-of-use as the A1 Mini. Featuring automatic calibration, vibration compensation, and flow calibration, it delivers consistent, high-quality prints for larger projects. The open design provides easy access while maintaining excellent print quality.",
+    description: "The Bambu Lab A1 is a full-size bedslinger printer offering a generous 256 x 256 x 256 mm Layerforge with the same exceptional quality and ease-of-use as the A1 Mini. Featuring automatic calibration, vibration compensation, and flow calibration, it delivers consistent, high-quality prints for larger projects. The open design provides easy access while maintaining excellent print quality.",
     price: "R9 299",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/A1.png`],
     specs: {
       printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
@@ -641,7 +641,7 @@ export const printers: Printer[] = [
       bedTemp: "Up to 100°C (textured PEI plate)",
     },
     features: [
-      "Large 256mm³ print dimensions",
+      "Large 256mm³ Layerforge",
       "Fully automatic calibration",
       "Vibration compensation (input shaping)",
       "Flow rate calibration",
@@ -657,9 +657,9 @@ export const printers: Printer[] = [
     name: "A1 Combo",
     brand: "Bambu Lab",
     slug: "bambu-lab-a1-combo",
-    description: "The A1 Combo combines the full-size A1 printer with the AMS Lite system for large-format multi-color printing. With a 256 x 256 x 256 mm print dimensions and 4-color capability, it's ideal for creating impressive multi-color models, functional prototypes, and creative projects at scale. RFID filament recognition ensures optimal settings for every material.",
+    description: "The A1 Combo combines the full-size A1 printer with the AMS Lite system for large-format multi-color printing. With a 256 x 256 x 256 mm Layerforge and 4-color capability, it's ideal for creating impressive multi-color models, functional prototypes, and creative projects at scale. RFID filament recognition ensures optimal settings for every material.",
     price: "R13 499",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/A1-Combo.png`],
     specs: {
       printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
@@ -671,7 +671,7 @@ export const printers: Printer[] = [
     },
     features: [
       "AMS Lite included (4-spool capacity)",
-      "Large 256mm³ print dimensions",
+      "Large 256mm³ Layerforge",
       "4-color/multi-material printing",
       "RFID filament recognition",
       "Fully automatic calibration",
@@ -688,7 +688,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-p1p",
     description: "The Bambu Lab P1P is a high-speed CoreXY 3D printer with an open frame design, delivering professional-grade speed and reliability at an accessible price. With 500 mm/s print speeds and 20,000 mm/s² acceleration, it dramatically reduces print times while maintaining quality. The open design provides easy access and is ideal for PLA and PETG printing.",
     price: "R14 499",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Bambu-Lab-P1P.png`],
     specs: {
       printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
@@ -717,7 +717,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-p1s",
     description: "The Bambu Lab P1S is a fully enclosed CoreXY 3D printer designed for advanced filaments like ABS, ASA, and PA. The enclosed chamber maintains stable temperatures while the activated carbon filter reduces odors and captures particles. With the same high-speed performance as the P1P plus enhanced cooling, it's the ideal choice for engineering materials.",
     price: "R14 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Bambu-Lab-P1S.png`],
     specs: {
       printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
@@ -746,7 +746,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-p1s-ams-combo",
     description: "The P1S & AMS Combo bundles the enclosed P1S printer with the Automatic Material System for professional multi-color and multi-material printing. The AMS enables up to 4 colors per unit (16 colors with 4 AMS units), with automatic filament switching and humidity-controlled storage. Perfect for complex multi-material engineering parts and vibrant multi-color prints.",
     price: "R21 995",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Bambu-Lab-P1S-and-AMS-Combo.png`],
     specs: {
       printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
@@ -775,7 +775,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-p1s-combo-2-pro",
     description: "The P1S Combo 2 Pro pairs the enclosed P1S printer with the next-generation AMS 2 Pro system featuring enhanced filament handling with a buffer system for smoother material transitions. The AMS 2 Pro reduces failed prints from tangled filament and enables more reliable multi-color printing with challenging materials.",
     price: "R23 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/P1S-Combo-2-Pro-with-Buffer.jpg`],
     specs: {
       printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
@@ -804,7 +804,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-p2s",
     description: "Fully enclosed CoreXY 3D printer with an adaptive airflow system that can draw in external air for low-temperature filaments and switch to internal circulation with filtration for higher-temperature printing. Includes a touchscreen and a 1080p live view camera.",
     price: "R17 695",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Bambu-Lab-P2S.png`],
     specs: {
       printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron",
@@ -829,7 +829,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-p2s-combo",
     description: "The P2S Combo bundles the advanced P2S printer with the AMS for seamless multi-color and multi-material printing. Combining the P2S's adaptive airflow, 600 mm/s speeds, and 1080p camera with 4-color capability, it's the complete solution for professional multi-color workflows.",
     price: "R25 445",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Bambu-Lab-P2S-Combo.png`],
     specs: {
       printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
@@ -858,7 +858,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-x1-carbon",
     description: "The Bambu Lab X1 Carbon is the flagship CoreXY 3D printer featuring Lidar-based first layer scanning, AI-powered failure detection, and a hardened steel nozzle for carbon fiber and abrasive materials. With 500 mm/s speeds, 20,000 mm/s² acceleration, and a fully enclosed heated chamber, it delivers professional results with engineering-grade materials.",
     price: "R32 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Bambu-Lab-X1-Carbon-Printer.png`],
     specs: {
       printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
@@ -887,7 +887,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-x1-carbon-ams-combo",
     description: "The X1 Carbon & AMS Combo combines Bambu Lab's flagship printer with the Automatic Material System for professional multi-color and multi-material printing. With Lidar scanning, AI failure detection, and 4-color capability (expandable to 16), it's the ultimate solution for complex engineering parts and stunning multi-color prints.",
     price: "R39 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Bambu-Lab-X1-Carbon-and-AMS-Combo.png`],
     specs: {
       printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
@@ -916,7 +916,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-x1-carbon-combo-2-pro",
     description: "The X1 Carbon Combo 2 Pro pairs the flagship X1 Carbon with the next-generation AMS 2 Pro featuring an integrated buffer system for smoother filament transitions and reduced failures. This premium combo delivers the most reliable multi-material printing experience for demanding professional applications.",
     price: "R44 707",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Bambu-Lab-X1-Carbon-Combo-2-Pro.png`],
     specs: {
       printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
@@ -945,7 +945,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-x1e-ams-combo",
     description: "The Bambu Lab X1E is the enterprise-grade 3D printer designed for industrial environments requiring enhanced security, reliability, and high-temperature material capability. With offline mode for air-gapped networks, hardened components for abrasive materials, and chamber temperatures up to 60°C, it handles demanding engineering materials like PA-CF, PAHT-CF, and PPS-CF.",
     price: "R65 995",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Bambu-Lab-X1E-and-AMS-Combo.png`],
     specs: {
       printDimensions: "256 x 256 x 256 mm",
       resolution: "50 - 500 micron (layer height)",
@@ -974,7 +974,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-h2c-combo",
     description: "Dual-hotend CoreXY system designed for multi-material workflows, with induction hotend rack support and compatibility with laser and cutting modules depending on configuration.",
     price: "R45 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Bambu-Lab-H2C-Combo.png`],
     specs: {
       printDimensions: "325 x 320 x 325 mm",
       materials: "PLA, PETG, TPU, PVA, BVOH, ABS, ASA, PC, PA, PET, PPS (and fiber-reinforced variants)",
@@ -996,7 +996,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-h2c-laser-10w",
     description: "Hybrid system with 10W laser engraving capability.",
     price: "R52 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Bambu-Lab-H2C-Laser-10W.png`],
     specs: {
       printDimensions: "Large format hybrid",
       materials: "Multiple material types",
@@ -1011,7 +1011,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-h2d",
     description: "Dual-hotend CoreXY platform designed for multi-material printing with an optional laser ecosystem (depending on version). Uses H2-series hotends and supports automated filament cutting/switching workflows.",
     price: "R53 499",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Bambu-Lab-H2D.png`],
     specs: {
       printDimensions: "325 x 320 x 325 mm",
       resolution: "50 - 500 micron",
@@ -1033,7 +1033,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-h2d-ams-combo",
     description: "H2D with AMS for multi-color 3D printing capabilities.",
     price: "R62 865",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Bambu-Lab-H2D-AMS-Combo.png`],
     specs: {
       printDimensions: "Large format hybrid",
       materials: "Multiple material types",
@@ -1048,7 +1048,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-h2d-laser-10w",
     description: "H2D with 10W laser for engraving and cutting.",
     price: "R74 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Bambu-Lab-H2D-Laser-Full-Combo-10-W.png`],
     specs: {
       printDimensions: "Large format hybrid",
       materials: "Multiple material types",
@@ -1063,7 +1063,7 @@ export const printers: Printer[] = [
     slug: "bambu-lab-h2d-laser-40w",
     description: "H2D with powerful 40W laser for heavy-duty engraving and cutting.",
     price: "R94 098",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Bambu-Lab-H2D-Laser-Full-Combo-40-W.png`],
     specs: {
       printDimensions: "Large format hybrid",
       materials: "Multiple material types",
@@ -1080,7 +1080,7 @@ export const printers: Printer[] = [
     slug: "creality-k1",
     description: "High-speed CoreXY 3D printer with speeds up to 600mm/s and enclosed design.",
     price: "R11 699",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Creality-K1.png`],
     specs: {
       printDimensions: "220 x 220 x 250 mm",
       resolution: "50 - 500 micron",
@@ -1099,7 +1099,7 @@ export const printers: Printer[] = [
     slug: "creality-k1-max",
     description: "Large-format high-speed CoreXY printer with AI camera for monitoring.",
     price: "R14 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Creality-K1-MAX.png`],
     specs: {
       printDimensions: "300 x 300 x 300 mm",
       resolution: "50 - 500 micron",
@@ -1118,7 +1118,7 @@ export const printers: Printer[] = [
     slug: "creality-k1c",
     description: "Carbon fiber optimized high-speed printer with hardened nozzle.",
     price: "R12 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Creality-K1C.png`],
     specs: {
       printDimensions: "220 x 220 x 250 mm",
       resolution: "50 - 500 micron",
@@ -1136,7 +1136,7 @@ export const printers: Printer[] = [
     slug: "creality-k1-se",
     description: "Special edition K1 with enhanced features and reliability.",
     price: "R10 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Creality-K1-SE.png`],
     specs: {
       printDimensions: "220 x 220 x 250 mm",
       resolution: "50 - 500 micron",
@@ -1154,7 +1154,7 @@ export const printers: Printer[] = [
     slug: "creality-k2-plus",
     description: "Next-generation large-format CoreXY printer with advanced features.",
     price: "R24 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Creality-K2-Plus.png`],
     specs: {
       printDimensions: "350 x 350 x 350 mm",
       resolution: "50 - 500 micron",
@@ -1173,7 +1173,7 @@ export const printers: Printer[] = [
     slug: "creality-k2-plus-combo",
     description: "K2 Plus with multi-material system for multi-color printing.",
     price: "R33 599",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Creality-K2-Plus-Combo.png`],
     specs: {
       printDimensions: "350 x 350 x 350 mm",
       resolution: "50 - 500 micron",
@@ -1192,7 +1192,7 @@ export const printers: Printer[] = [
     slug: "creality-k2-pro-combo",
     description: "Professional K2 variant with enhanced capabilities and multi-material system.",
     price: "R29 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Creality-K2-Pro-Combo.png`],
     specs: {
       printDimensions: "300 x 300 x 300 mm",
       resolution: "50 - 500 micron",
@@ -1211,7 +1211,7 @@ export const printers: Printer[] = [
     slug: "creality-ender-7",
     description: "High-speed FDM printer with CoreXY motion system.",
     price: "R8 189",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Creality-Ender-7.png`],
     specs: {
       printDimensions: "250 x 250 x 300 mm",
       resolution: "50 - 400 micron",
@@ -1230,7 +1230,7 @@ export const printers: Printer[] = [
     slug: "creality-ender-3-v3-ke",
     description: "Klipper-enabled Ender 3 with improved speed and features.",
     price: "R6 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Creality-Ender-3-V3-KE.png`],
     specs: {
       printDimensions: "220 x 220 x 250 mm",
       resolution: "50 - 400 micron",
@@ -1246,9 +1246,9 @@ export const printers: Printer[] = [
     name: "Creality Ender 3 V3 Plus",
     brand: "Creality",
     slug: "creality-ender-3-v3-plus",
-    description: "Larger Ender 3 V3 with expanded print dimensions.",
+    description: "Larger Ender 3 V3 with expanded Layerforge.",
     price: "R8 499",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Creality-Ender-3-V3-Plus.png`],
     specs: {
       printDimensions: "300 x 300 x 330 mm",
       resolution: "50 - 400 micron",
@@ -1257,16 +1257,16 @@ export const printers: Printer[] = [
       printSpeed: "Up to 500 mm/s",
       nozzleTemp: "Up to 260°C",
     },
-    features: ["Larger print dimensions", "Klipper firmware", "Input shaping", "Auto leveling"],
+    features: ["Larger Layerforge", "Klipper firmware", "Input shaping", "Auto leveling"],
   },
   {
     id: "creality-ender-3-s1-plus",
     name: "Creality Ender 3 S1 Plus",
     brand: "Creality",
     slug: "creality-ender-3-s1-plus",
-    description: "Enhanced Ender 3 S1 with larger print dimensions and improved features.",
+    description: "Enhanced Ender 3 S1 with larger Layerforge and improved features.",
     price: "R7 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Creality-Ender-3-S1-Plus.png`],
     specs: {
       printDimensions: "300 x 300 x 300 mm",
       resolution: "50 - 400 micron",
@@ -1275,16 +1275,16 @@ export const printers: Printer[] = [
       printSpeed: "Up to 150 mm/s",
       nozzleTemp: "Up to 260°C",
     },
-    features: ["Larger print dimensions", "Direct drive", "CR Touch leveling", "Sprite extruder"],
+    features: ["Larger Layerforge", "Direct drive", "CR Touch leveling", "Sprite extruder"],
   },
   {
     id: "creality-ender-5-max",
     name: "Creality Ender 5 Max",
     brand: "Creality",
     slug: "creality-ender-5-max",
-    description: "Large-format Ender 5 with massive print dimensions.",
+    description: "Large-format Ender 5 with massive Layerforge.",
     price: "R12 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Ender-5-Max.png`],
     specs: {
       printDimensions: "400 x 400 x 400 mm",
       resolution: "50 - 400 micron",
@@ -1293,7 +1293,7 @@ export const printers: Printer[] = [
       printSpeed: "Up to 180 mm/s",
       nozzleTemp: "Up to 260°C",
     },
-    features: ["Massive print dimensions", "Stable cube frame", "Dual Y-axis", "BL Touch compatible"],
+    features: ["Massive Layerforge", "Stable cube frame", "Dual Y-axis", "BL Touch compatible"],
   },
   {
     id: "creality-hi-combo",
@@ -1302,7 +1302,7 @@ export const printers: Printer[] = [
     slug: "creality-hi-combo",
     description: "Creality Hi series with multi-material combo system.",
     price: "R15 999",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Creality-Hi-Combo.png`],
     specs: {
       printDimensions: "220 x 220 x 250 mm",
       resolution: "50 - 500 micron",
@@ -1321,7 +1321,7 @@ export const printers: Printer[] = [
     slug: "desktop-metal-studio-system-plus",
     description: "Office-friendly metal 3D printing system for prototyping and low-volume production.",
     price: "Enquire for pricing",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Studio-System-+.png`],
     specs: {
       printDimensions: "300 x 200 x 200 mm",
       materials: "17-4 PH, 316L, H13, Copper",
@@ -1336,7 +1336,7 @@ export const printers: Printer[] = [
     slug: "desktop-metal-shop-system",
     description: "High-throughput binder jetting system for metal part production.",
     price: "Enquire for pricing",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Shop-System.png`],
     specs: {
       printDimensions: "350 x 220 x 50 mm",
       materials: "17-4 PH, 316L, 4140, Copper",
@@ -1351,7 +1351,7 @@ export const printers: Printer[] = [
     slug: "desktop-metal-production-system-p1",
     description: "Entry-level production binder jetting system for metal parts.",
     price: "Enquire for pricing",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Production-System-P-1.png`],
     specs: {
       printDimensions: "200 x 100 x 50 mm",
       materials: "17-4 PH, 316L, 4140",
@@ -1366,7 +1366,7 @@ export const printers: Printer[] = [
     slug: "desktop-metal-production-system-p50",
     description: "High-volume production binder jetting system for industrial metal manufacturing.",
     price: "Enquire for pricing",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Production-System-P-50.png`],
     specs: {
       printDimensions: "490 x 380 x 260 mm",
       materials: "17-4 PH, 316L, 4140, Copper",
@@ -1383,7 +1383,7 @@ export const printers: Printer[] = [
     slug: "intamsys-funmat-ht",
     description: "High-temperature industrial 3D printer for engineering-grade materials.",
     price: "R179 659",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Intamsys-Funmat-HT.png`],
     specs: {
       printDimensions: "260 x 260 x 260 mm",
       materials: "PEEK, ULTEM, PPSU, PC, PA",
@@ -1400,7 +1400,7 @@ export const printers: Printer[] = [
     slug: "intamsys-funmat-pro-410",
     description: "Professional high-temperature 3D printer for advanced materials.",
     price: "P.O.R",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Intamsys-Funmat-Pro-410.png`],
     specs: {
       printDimensions: "305 x 305 x 406 mm",
       materials: "PEEK, ULTEM, PPSU, PC, PA, Carbon Fiber",
@@ -1417,7 +1417,7 @@ export const printers: Printer[] = [
     slug: "intamsys-funmat-pro-610-ht",
     description: "Large-format high-temperature industrial 3D printer.",
     price: "P.O.R",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/Intamsys-Funmat-Pro-610-HT.png`],
     specs: {
       printDimensions: "610 x 508 x 508 mm",
       materials: "PEEK, ULTEM, PPSU, PC, PA, Carbon Fiber",
@@ -1436,7 +1436,7 @@ export const printers: Printer[] = [
     slug: "bigrep-one",
     description: "Large-format industrial 3D printer for full-scale prototypes and end-use parts.",
     price: "P.O.R",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/BigRep-ONE.png`],
     specs: {
       printDimensions: "1005 x 1005 x 1005 mm",
       materials: "PLA, PETG, ASA, PA, TPU",
@@ -1452,7 +1452,7 @@ export const printers: Printer[] = [
     slug: "bigrep-pro",
     description: "Professional large-format 3D printer with advanced materials capability.",
     price: "P.O.R",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/BigRep-PRO.2.png`],
     specs: {
       printDimensions: "1005 x 1005 x 1005 mm",
       materials: "Engineering-grade materials, composites",
@@ -1468,7 +1468,7 @@ export const printers: Printer[] = [
     slug: "bigrep-studio",
     description: "Compact large-format 3D printer for design studios and workshops.",
     price: "P.O.R",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/BigRep-Studio.png`],
     specs: {
       printDimensions: "500 x 1000 x 500 mm",
       materials: "PLA, PETG, ASA, PA, TPU",
@@ -1485,14 +1485,14 @@ export const printers: Printer[] = [
     slug: "elegoo-orangestorm-giga",
     description: "Massive industrial-scale FDM 3D printer for large parts and prototypes.",
     price: "Contact for pricing",
-    images: [`/concept/detail.svg`],
+    images: [`${IMG}/OrangeStorm-Giga.png`],
     specs: {
       printDimensions: "800 x 800 x 1000 mm",
       materials: "PLA, PETG, ABS, ASA, TPU",
       connectivity: "Wi-Fi, Ethernet",
       printSpeed: "Up to 300 mm/s",
     },
-    features: ["Massive print dimensions", "Industrial scale", "Enclosed chamber", "Multi-zone heating"],
+    features: ["Massive Layerforge", "Industrial scale", "Enclosed chamber", "Multi-zone heating"],
   },
 ];
 
